@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: 
 
 profile:
   align: right
@@ -13,16 +13,16 @@ profile:
     <p>6100 Main St</p>
     <p>Houston, Texas 77005</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+selected_papers: false # includes a list of papers marked as "selected={true}"
+social: false # includes social icons at the bottom of the page
 
 announcements:
-  enabled: true # includes a list of news items
+  enabled: false # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
@@ -33,10 +33,16 @@ Put your address / P.O. box / other info right below your picture. You can also 
 
 Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->
 
-I’m a second-year Ph.D. student in the Department of Computer Science at Rice University (advisor: Xia 'Ben' Hu). 
+### About me
+
+I’m a Jiamu 'Morris' Zhang, second-year Ph.D. student in the Department of Computer Science at Rice University (advisor: Xia 'Ben' Hu). 
 
 My research focuses on efficient and robust machine learning, particularly in large language models (LLMs), multi-agent systems, and reasoning-aware evaluation. I'm broadly interested in developing practical and theoretically grounded approaches to make foundation models faster, safer, and more reliable.
 
 Prior to my Ph.D., I received my B.S. in Department of Computer and Data Science from Case Western Reserve University (advisor: Shuai Xu and Vipin Chaudhary), where I worked on model compression and adversarial robustness.
 
 I'm really passionate about building open, efficient, and reliable AI systems. Feel free to reach out!
+
+### Publications
+
+Please refer to [publications](https://scholar.google.com/citations?user=eQpW5EIAAAAJ&hl=en&oi=ao)
