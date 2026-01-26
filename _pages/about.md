@@ -35,7 +35,7 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
 
 ### About me
 
-I’m a Jiamu 'Morris' Zhang, second-year Ph.D. student in the Department of Computer Science at Rice University (advisor: Professor Hanjie Chen). 
+I’m a Jiamu 'Morris' Zhang (张佳慕), second-year Ph.D. student in the Department of Computer Science at Rice University (advisor: Professor Hanjie Chen). 
 
 My research focuses on efficient and robust machine learning, particularly in large language models (LLMs), multi-agent systems, model architecture, etc. I'm broadly interested in developing practical and theoretically grounded approaches to make foundation models faster, safer, and more reliable.
 
