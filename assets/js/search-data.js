@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-publications",
           title: "publications",
-          description: "A selected list with short digests. An asterisk (*) denotes equal contribution. See Google Scholar for the full list.",
+          description: "A selected list with short digests. An asterisk (*) denotes equal contribution; see my Google Scholar for the full list.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
