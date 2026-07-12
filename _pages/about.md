@@ -29,7 +29,7 @@ latest_posts:
 
 ### About me
 
-I’m a Jiamu 'Morris' Zhang (张佳慕), third-year Ph.D. student in the Department of Computer Science at Rice University, where I am a member of the [Chili Lab](https://hanjiechen.github.io/group.html) advised by Professor [Hanjie Chen](https://hanjiechen.github.io/index.html).
+I’m Jiamu 'Morris' Zhang (张佳慕), third-year Ph.D. student in the Department of Computer Science at Rice University, where I am a member of the [Chili Lab](https://hanjiechen.github.io/group.html) advised by Professor [Hanjie Chen](https://hanjiechen.github.io/index.html).
 
 My research centers on efficient, scalable, and reliable machine learning for large language models (LLMs) and agentic systems. I'm especially drawn to *system–method co-design*: pairing algorithmic ideas—model compression, efficient reasoning and test-time compute control, sparsity and Mixture-of-Experts—with the systems that actually run them, from memory- and compute-aware inference to LLM serving on low-resource hardware. My goal is to make foundation models faster and cheaper without giving up quality. I'm equally interested in how we *measure* these systems, developing rigorous and label-efficient ways to evaluate LLM and multi-agent behavior beyond raw accuracy.
 
