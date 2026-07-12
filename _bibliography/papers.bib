@@ -23,6 +23,28 @@
   digest={Mixture-of-Experts models put most of their parameters in experts, yet only a few fire per token -- and on commodity GPUs the usual layer-level CPU offload streams every expert across PCIe on each forward pass, throwing away MoE's sparsity. WiSP treats low-resource MoE serving as a GPU working-set problem, paging in only the experts a workload actually reuses, and reaches up to 1.95x the decode throughput of static offload at the same memory budget with byte-identical outputs. A companion allocator, MV-WSA, splits VRAM between experts and the KV cache by equalizing marginal latency benefit per byte.}
 }
 
+@article{zhang2026maseval,
+  abbr={Under Review},
+  title={Rethinking the Evaluation of Efficiency Methods for Multi-Agent Systems},
+  author={Jiamu Zhang* and Lingxi Zhang* and Pengjun Lu* and Qiyue Zhang and Yu-Neng Chuang and Zhengchen Li and Shuai Xu and Vipin Chaudhary and Hanjie Chen},
+  journal={Under review},
+  year={2026},
+  bibtex_show={true},
+  tldr={Evaluation + Multi-Agent + Efficiency},
+  digest={Many methods claim to make LLM multi-agent systems (MAS) cheaper by pruning agents or communication edges -- but do the gains really come from the method? Reported improvements are often measured under method-specific prompts and starting topologies, and many appear in settings where a single agent or even random pruning already does well. We introduce a controlled, MAS-demanding diagnostic benchmark that evaluates representative efficiency methods under shared model, agent, and runtime settings across topology, scale, depth, and tool use, and find that many reported gains are setup-dependent -- arising from structural collapse, disabled tool pathways, or easy pruning rather than genuine efficiency improvements.}
+}
+
+@article{zhang2026more,
+  abbr={Under Review},
+  title={Recognizing and Restructuring Latent Experts for Large Language Model Compression},
+  author={Jiamu Zhang and Alessandro Mason and Ning Xie and Aarav Swami and Ashley Chen and Shuai Xu and Vipin Chaudhary and Hanjie Chen},
+  journal={Under review},
+  year={2026},
+  bibtex_show={true},
+  tldr={Efficiency + Compression + MoE},
+  digest={Static compression like pruning permanently removes parameters deemed globally unimportant -- but in LLMs, importance is highly input- and task-dependent, so static removal is brittle under distribution shift. Inspired by conditional computation in Mixture-of-Experts, MoRE (Mixture-of-Recognized-Experts) is a training-free paradigm that turns static redundancy in pretrained Transformers into input-dependent sparse computation. We find that pretrained MLP layers have a hybrid structure -- a shared backbone that is always active plus input-dependent residual components that enable specialization -- and MoRE exploits it through training-free routing, activating different subsets of pretrained parameters per input without modifying any weights. Across model families and benchmarks, MoRE matches or beats structured pruning on accuracy--efficiency trade-offs while staying robust under distribution shift and knowledge-intensive QA.}
+}
+
 @inproceedings{zhang2025flexgroup,
   abbr={CVPR},
   title={Flexible Group Count Enables Hassle-Free Structured Pruning},
