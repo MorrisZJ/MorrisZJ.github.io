@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://MorrisZJ.github.io.git/sitemap.xml
+Sitemap: https://MorrisZJ.github.io/sitemap.xml
