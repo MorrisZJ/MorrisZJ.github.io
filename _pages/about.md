@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: 
+subtitle: Ph.D. Student in Computer Science at <a href="https://www.rice.edu/">Rice University</a>.
 
 profile:
   align: right
@@ -13,11 +13,11 @@ profile:
     <p>6100 Main St</p>
     <p>Houston, Texas 77005</p>
 
-selected_papers: false # includes a list of papers marked as "selected={true}"
-social: false # includes social icons at the bottom of the page
+selected_papers: true # includes a list of papers marked as "selected={true}"
+social: true # includes social icons at the bottom of the page
 
 announcements:
-  enabled: false # includes a list of news items
+  enabled: true # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
@@ -27,22 +27,14 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-<!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
-
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->
-
 ### About me
 
-I’m a Jiamu 'Morris' Zhang (张佳慕), second-year Ph.D. student in the Department of Computer Science at Rice University (advisor: Professor Hanjie Chen). 
+I’m a Jiamu 'Morris' Zhang (张佳慕), third-year Ph.D. student in the Department of Computer Science at Rice University, where I am a member of the [Chili Lab](https://hanjiechen.github.io/group.html) advised by Professor [Hanjie Chen](https://hanjiechen.github.io/index.html).
 
-My research focuses on efficient and robust machine learning, particularly in large language models (LLMs), multi-agent systems, model architecture, etc. I'm broadly interested in developing practical and theoretically grounded approaches to make foundation models faster, safer, and more reliable.
+My research centers on efficient, scalable, and reliable machine learning for large language models (LLMs) and agentic systems. I'm especially drawn to *system–method co-design*: pairing algorithmic ideas—model compression, efficient reasoning and test-time compute control, sparsity and Mixture-of-Experts—with the systems that actually run them, from memory- and compute-aware inference to LLM serving on low-resource hardware. My goal is to make foundation models faster and cheaper without giving up quality. I'm equally interested in how we *measure* these systems, developing rigorous and label-efficient ways to evaluate LLM and multi-agent behavior beyond raw accuracy.
 
-Prior to my Ph.D., I received my B.S. in Department of Computer and Data Science from Case Western Reserve University (advisor: Shuai Xu and Vipin Chaudhary), where I worked on model compression and adversarial robustness.
+Prior to my Ph.D., I received my B.S. in the Department of Computer and Data Science from Case Western Reserve University (advisor: Shuai Xu and Vipin Chaudhary), where I worked on model compression and adversarial robustness. I was also fortunate to be mentored by Dr. [Xia "Ben" Hu](https://cs.rice.edu/~xh37/index.html).
 
 I'm really passionate about building open, efficient, and reliable AI systems. Feel free to reach out!
 
-### Publications
-
-Please refer to [publications](https://scholar.google.com/citations?user=eQpW5EIAAAAJ&hl=en&oi=ao)
+See my [publications](/publications/) for a full list, or my [Google Scholar](https://scholar.google.com/citations?user=eQpW5EIAAAAJ&hl=en) profile.

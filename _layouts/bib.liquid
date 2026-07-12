@@ -185,6 +185,22 @@
       {{ entry.note | strip }}
     </div>
 
+    <!-- TL;DR + digest (shown only on pages with bib_digest: true) -->
+    {% if page.bib_digest %}
+      {% if entry.tldr %}
+        <div class="pub-tldr">
+          <span class="pub-tldr-label">TL;DR</span>
+          {%- assign tldr_tags = entry.tldr | split: '+' -%}
+          {%- for tag in tldr_tags -%}
+            <span class="pub-tag">{{ tag | strip }}</span>
+          {%- endfor -%}
+        </div>
+      {% endif %}
+      {% if entry.digest %}
+        <div class="pub-digest">{{ entry.digest | markdownify }}</div>
+      {% endif %}
+    {% endif %}
+
     <!-- Links/Buttons -->
     <div class="links">
       {% if entry.award %}

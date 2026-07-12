@@ -3,9 +3,8 @@ layout: cv
 permalink: /cv/
 title: cv
 nav: true
-nav_order: 5
-cv_pdf: Jiamu_Zhang_Resume_morris.pdf # you can also use external links here
-description: CV
+nav_order: 3
+description: Curriculum vitae.
 toc:
   sidebar: left
 ---

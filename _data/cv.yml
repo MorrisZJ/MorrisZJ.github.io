@@ -2,96 +2,85 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
+      value: Jiamu (Morris) Zhang
+    - name: Email
+      value: mz81@rice.edu
     - name: Languages
-      value: English, German
+      value: English, Mandarin Chinese
 
-# - title: Education
-#   type: time_table
-#   contents:
-#     - title: PhD
-#       institution: University of Zurich, Zurich, Switzerland
-#       year: 1905
-#       description:
-#         - Description 1.
-#         - Description 2.
-#         - title: Description 3.
-#           contents:
-#             - Sub-description 1.
-#             - Sub-description 2.
-#     - title: Federal teaching diploma
-#       institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-#       year: 1900
-#       description:
-#         - Description 1.
-#         - Description 2.
+- title: Summary
+  type: list
+  contents:
+    - Ph.D. student in Computer Science focusing on efficient and scalable deep learning and agentic systems, with interests in model compression, system-aware efficiency optimization, and evaluation.
 
-# - title: Experience
-#   type: time_table
-#   contents:
-#     - title: Professor of Theoretical Physics
-#       institution: Institute for Advanced Study, Princeton University
-#       year: 1933 - 1955
-#       description:
-#         - Description 1.
-#         - Description 2.
-#         - title: Description 3.
-#           contents:
-#             - Sub-description 1.
-#             - Sub-description 2.
-#     - title: Visiting Professor
-#       institution: California Institute of Technology, Pasadena, California, US
-#       year: 1933
-#       description:
-#         - Description 1.
-#         - Description 2.
+- title: Education
+  type: time_table
+  contents:
+    - title: Ph.D. in Computer Science
+      institution: Rice University, Houston, TX
+      year: 08/2024 - Present
+      description:
+        - 'Advisor: Prof. Hanjie Chen, Chili Lab (08/2025 - Present)'
+        - 'Advisor: Prof. Xia "Ben" Hu, Data Lab (08/2024 - 08/2025)'
+    - title: B.S. in Computer Science
+      institution: Case Western Reserve University, Cleveland, OH
+      year: 05/2024
+      description:
+        - Department of Computer and Data Science.
+        - Advisors: Prof. Shuai Xu and Prof. Vipin Chaudhary.
 
-#     - title: Director
-#       institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-#       year: 1917-1933
+- title: Honors and Awards
+  type: time_table
+  contents:
+    - title: Dean's High Honor List & Latin Honors
+      institution: Case Western Reserve University
+      year: 2024
+    - title: The Computer and Data Science Research Award
+      institution: Case Western Reserve University
+      year: 2024
+    - title: Swanger Graduate Fellowship
+      institution: Case Western Reserve University
+      year: 2024
 
-#     - title: Professor of Theoretical Physics
-#       institution: Karl-Ferdinand University, Prague, Czechoslovakia
-#       year: 1911 - 1917
-#       description:
+- title: Research Interests
+  type: nested_list
+  contents:
+    - title: Efficient Models and Inference Systems
+      items:
+        - System-aware model compression (pruning, sparsification, quantization) and algorithm-implementation co-design.
+        - Scalable architectures for efficient inference and serving (e.g., Mixture-of-Experts, conditional routing).
+    - title: Agentic and Reasoning-Centric Systems
+      items:
+        - Efficient reasoning and test-time compute control for LLMs and multi-agent systems.
+        - Evaluation of LLM / agentic systems beyond accuracy.
 
-#     - title: Associate Professor of Theoretical Physics
-#       institution: University of Zurich, Zurich, Switzerland
-#       year: 1909 - 1911
+- title: Selected Publications
+  type: list
+  contents:
+    - "See the <a href='/publications/'>publications</a> page for a full list with short digests."
 
-# - title: Open Source Projects
-#   type: time_table
-#   contents:
-#     - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-#       year: 2015-now
-#       description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+- title: Professional Service
+  type: nested_list
+  contents:
+    - title: Conference Reviewer
+      items:
+        - NeurIPS, ICML, ACL
+    - title: Journal Reviewer
+      items:
+        - IEEE TPAMI, IEEE TCDS, ACM TIST, ACM TCH, and Neurocomputing.
 
-# - title: Honors and Awards
-#   type: time_table
-#   contents:
-#     - year: 1921
-#       items:
-#         - Nobel Prize in Physics
-#         - Matteucci Medal
-#     - year: 2029
-#       items:
-#         - Max Planck Medal
-
-# - title: Academic Interests
-#   type: nested_list
-#   contents:
-#     - title: Topic 1.
-#       items:
-#         - Description 1.
-#         - Description 2.
-#     - title: Topic 2.
-#       items:
-#         - Description 1.
-#         - Description 2.
-
-# - title: Other Interests
-#   type: list
-#   contents:
-#     - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+- title: Teaching
+  type: time_table
+  contents:
+    - title: TA, COMP 584 - Natural Language Processing
+      institution: Rice University
+      year: 2026 Spring
+    - title: TA, COMP 631 - Introduction to Information Retrieval
+      institution: Rice University
+      year: 2025 Spring
+    - title: TA, CSDS 302 - Discrete Mathematics
+      institution: Case Western Reserve University
+      year: 2022, 2023, 2024
+    - title: TA, CSDS 386 - Quantum Computing, Information, and Devices
+      institution: Case Western Reserve University
+      year: 2023 Spring
