@@ -84,6 +84,15 @@ a {
   transition: color 0.2s ease;
 }
 
+// Highlight the author's own name (instead of the theme's underline).
+.publications .author > em,
+.publications .author em {
+  border-bottom: none !important;
+  font-style: normal;
+  font-weight: 700;
+  color: var(--global-theme-color);
+}
+
 // -----------------------------------------------------------------------------
 // Publications: always-visible TL;DR + digest (Henry-Zhong-style)
 // -----------------------------------------------------------------------------

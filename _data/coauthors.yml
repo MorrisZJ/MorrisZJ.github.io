@@ -1,10 +1,6 @@
 # Maps co-author last names to their homepages so their names link in the
 # bibliography. Add entries as: "lastname": - firstname: [variants], url: ...
 
-"zhong":
-  - firstname: ["Shaochen", "Shaochen (Henry)"]
-    url: https://henryzhong.com/
-
 "hu":
   - firstname: ["Xia", "Xia \"Ben\""]
     url: https://cs.rice.edu/~xh37/index.html
