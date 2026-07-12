@@ -1,9 +1,19 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+# Maps a bib entry's `abbr` to a venue link (and optional badge color).
+# Badges without an entry here fall back to the theme's default styling.
 
-"PhysRev":
-  url: https://journals.aps.org/
-
-"Vision":
-  color: "#009f36"
+"CVPR":
+  url: https://cvpr.thecvf.com/
+"ICML":
+  url: https://icml.cc/
+"NeurIPS":
+  url: https://neurips.cc/
+"ACL":
+  url: https://aclanthology.org/
+"TMLR":
+  url: https://jmlr.org/tmlr/
+"ICLR-W":
+  url: https://iclr.cc/
+"IEEE SPW":
+  url: https://www.ieee-security.org/TC/SPW2025/
+"npj Med":
+  url: https://www.nature.com/npjdigitalmed/
