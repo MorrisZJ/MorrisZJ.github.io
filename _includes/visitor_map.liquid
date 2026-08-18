@@ -1,0 +1,19 @@
+{% comment %}
+  Visitor counter / map (e.g. ClustrMaps). Renders nothing until
+  site.visitor_map.enabled is true and an image src is configured.
+{% endcomment %}
+
+{% if site.visitor_map.enabled and site.visitor_map.image %}
+  <div class="visitor-map">
+    {% if site.visitor_map.title %}
+      <div class="visitor-map-title">{{ site.visitor_map.title }}</div>
+    {% endif %}
+    {% if site.visitor_map.link %}
+      <a href="{{ site.visitor_map.link }}" target="_blank" rel="noopener noreferrer">
+        <img src="{{ site.visitor_map.image }}" alt="Map of visitors" loading="lazy">
+      </a>
+    {% else %}
+      <img src="{{ site.visitor_map.image }}" alt="Map of visitors" loading="lazy">
+    {% endif %}
+  </div>
+{% endif %}
