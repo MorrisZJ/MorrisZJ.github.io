@@ -33,6 +33,9 @@ ninja.data = [{
         },{id: "news-started-as-a-full-time-intern-at-nokia-ai-research-amp-amp-development-sunnyvale-ca-working-on-efficiency-amp-amp-system-method-co-design",
           title: 'Started as a full-time intern at Nokia AI Research &amp;amp;amp; Development (Sunnyvale, CA),...',
           description: "",
+          section: "News",},{id: "news-our-paper-rethinking-the-evaluation-of-efficiency-methods-for-multi-agent-systems-was-accepted-to-the-emnlp-2026-main-conference-see-you-in-budapest",
+          title: 'Our paper Rethinking the Evaluation of Efficiency Methods for Multi-Agent Systems was accepted...',
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
