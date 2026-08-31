@@ -36,6 +36,9 @@ ninja.data = [{
           section: "News",},{id: "news-our-paper-rethinking-the-evaluation-of-efficiency-methods-for-multi-agent-systems-was-accepted-to-the-emnlp-2026-main-conference-see-you-in-budapest",
           title: 'Our paper Rethinking the Evaluation of Efficiency Methods for Multi-Agent Systems was accepted...',
           description: "",
+          section: "News",},{id: "news-our-emnlp-2026-paper-rethinking-the-evaluation-of-efficiency-methods-for-multi-agent-systems-was-nominated-for-an-emnlp-2026-award",
+          title: 'Our EMNLP 2026 paper Rethinking the Evaluation of Efficiency Methods for Multi-Agent Systems...',
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
