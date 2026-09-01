@@ -43,13 +43,11 @@
   author={Jiamu Zhang and Liang Wu and Mayank Darbari and Liangjie Hong},
   journal={Preprint (work in progress)},
   year={2026},
-  selected={true},
   bibtex_show={true},
   arxiv={2606.21868},
   tldr={Efficiency + Systems + MoE},
   digest={Mixture-of-Experts models put most of their parameters in experts, yet only a few fire per token -- and on commodity GPUs the usual layer-level CPU offload streams every expert across PCIe on each forward pass, throwing away MoE's sparsity. WiSP treats low-resource MoE serving as a GPU working-set problem, paging in only the experts a workload actually reuses, and reaches up to 1.95x the decode throughput of static offload at the same memory budget with byte-identical outputs. A companion allocator, MV-WSA, splits VRAM between experts and the KV cache by equalizing marginal latency benefit per byte.}
 }
-
 
 @article{zhang2026more,
   abbr={Under Review},
@@ -73,19 +71,6 @@
   pdf={https://openaccess.thecvf.com/content/CVPR2025/papers/Zhang_Flexible_Group_Count_Enables_Hassle-Free_Structured_Pruning_CVPR_2025_paper.pdf},
   tldr={Efficiency + Pruning},
   digest={Structured (grouped-kernel) pruning normally forces you to pre-commit to a rigid group count, making it painful to reuse across architectures. We make the group count flexible and hassle-free, so a single procedure prunes convolutional models cleanly while preserving the dense, hardware-friendly structure that delivers real speedups.}
-}
-
-@inproceedings{zhang2025dirtyrag,
-  abbr={ICLR-W},
-  title={Sweeping Promptable Spoofs under the DirtyRAG: A Practical, Query-Blind RAG Attack Done Right},
-  author={Shaochen Zhong* and Jiamu Zhang* and Hoang Anh Duy Le and Wenya Xie and Yifan Lu and Xintong Sun and Mohsen Hariri and Hongyi Liu and Guanchu Wang and Zhaozhuo Xu and Jiarong Xing and Zirui Liu and Shuai Xu and Ning Xie and Li Li and Rui Chen and Ruixiang Tang and Vipin Chaudhary and Xia Hu},
-  booktitle={ICLR 2026 Workshop on AI for Wild (AIWILD), Spotlight (under review)},
-  year={2025},
-  selected={true},
-  bibtex_show={true},
-  pdf={https://openreview.net/pdf?id=i4NWII29qM},
-  tldr={Security + Evaluation},
-  digest={RAG is a powerful attack surface -- often one of the few places to reliably perform third-party prompt injection -- yet existing attacks are query-dependent and impractical. DirtyRAG is a query-blind attack that works under realistic threat models: given an arbitrary benign passage and a 128-passage injection budget, it can, on average, fill the top-50+ retrieval results for any reasonable query with adversarial content. We also build an evaluation suite that better reflects realistic RAG threat models.}
 }
 
 @article{sui2025overthinking,
