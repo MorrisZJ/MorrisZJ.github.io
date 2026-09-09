@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Jiamu (Morris) Zhang — Curriculum Vitae</title>
+<style>
+  @page { size: letter; margin: 0.5in 0.68in 0.42in 0.68in; }
+
+  :root {
+    --ink:      #16181d;
+    --muted:    #5a6068;
+    --rule:     #c8ccd2;
+    --accent:   #7a2f2f;
+    --sans: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --serif: Charter, "Bitstream Charter", Georgia, "Times New Roman", serif;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body {
+    margin: 0;
+    font-family: var(--serif);
+    font-size: 9.35pt;
+    line-height: 1.33;
+    color: var(--ink);
+  }
+  a { color: var(--accent); text-decoration: none; }
+
+  /* ---------- Header ---------- */
+  header { text-align: center; margin-bottom: 11pt; }
+  h1 {
+    font-family: var(--sans);
+    font-size: 20pt;
+    font-weight: 600;
+    letter-spacing: 0.055em;
+    margin: 0 0 5pt;
+    text-transform: uppercase;
+  }
+  h1 .sur { font-weight: 700; }
+  .contact {
+    font-family: var(--sans);
+    font-size: 8.3pt;
+    color: var(--muted);
+    letter-spacing: 0.012em;
+  }
+  .contact a { color: var(--accent); }
+  .contact .sep { color: var(--rule); padding: 0 4pt; }
+
+  /* ---------- Sections ---------- */
+  section { margin-top: 8pt; }
+  h2 {
+    font-family: var(--sans);
+    font-size: 8.9pt;
+    font-weight: 600;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: var(--ink);
+    margin: 0 0 4.5pt;
+    padding-bottom: 2.2pt;
+    border-bottom: 0.9pt solid var(--ink);
+  }
+  h3 {
+    font-family: var(--sans);
+    font-size: 8.2pt;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 6pt 0 3pt;
+  }
+  h3:first-of-type { margin-top: 1pt; }
+
+  /* ---------- Two-column rows (entry + date) ---------- */
+  .row { display: flex; justify-content: space-between; align-items: baseline; gap: 12pt; }
+  .row + .row { margin-top: 3.6pt; }
+  .row .what { flex: 1; }
+  .row .when {
+    font-family: var(--sans);
+    font-size: 8.2pt;
+    color: var(--muted);
+    white-space: nowrap;
+    text-align: right;
+  }
+  .title-line { font-weight: 600; }
+  .org { font-style: italic; color: var(--muted); }
+  .sub { color: var(--muted); font-size: 9.1pt; }
+
+  /* ---------- Lists ---------- */
+  ul { margin: 3pt 0 0; padding-left: 12pt; }
+  li { margin-bottom: 1.1pt; }
+  ul.tight { margin-top: 2pt; }
+
+  /* ---------- Publications ---------- */
+  .pub { display: flex; gap: 7pt; margin-bottom: 4.4pt; page-break-inside: avoid; }
+  .pub .tag {
+    font-family: var(--sans);
+    font-size: 7.4pt;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    color: #fff;
+    background: var(--ink);
+    border-radius: 2.5pt;
+    padding: 1.6pt 4.2pt;
+    white-space: nowrap;
+    flex: 0 0 57pt;
+    text-align: center;
+    height: fit-content;
+    margin-top: 0.6pt;
+  }
+  .pub .body { flex: 1; }
+  .pub .ttl { font-weight: 600; }
+  .pub .authors { color: var(--muted); }
+  .pub .authors b { color: var(--ink); font-weight: 700; }
+  .pub .venue { font-style: italic; color: var(--muted); }
+  .pub .links { font-family: var(--sans); font-size: 7.8pt; }
+  .honor {
+    font-family: var(--sans);
+    font-size: 7.5pt;
+    font-weight: 600;
+    color: var(--accent);
+    border: 0.8pt solid var(--accent);
+    border-radius: 2.5pt;
+    padding: 0.8pt 3.5pt;
+    margin-left: 3pt;
+    white-space: nowrap;
+  }
+  .footnote {
+    font-size: 8pt;
+    color: var(--muted);
+    font-style: italic;
+    margin-top: 4pt;
+  }
+  .interests li { margin-bottom: 2.4pt; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Jiamu (Morris) <span class="sur">Zhang</span></h1>
+  <div class="contact">
+    Houston, TX
+    <span class="sep">|</span> 216-280-7699
+    <span class="sep">|</span> <a href="mailto:mz81@rice.edu">mz81@rice.edu</a>
+    <span class="sep">|</span> <a href="https://MorrisZJ.github.io">MorrisZJ.github.io</a>
+    <span class="sep">|</span> <a href="https://scholar.google.com/citations?user=eQpW5EIAAAAJ">Google Scholar</a>
+    <span class="sep">|</span> <a href="https://www.linkedin.com/in/jiamu-zhang-morris">LinkedIn</a>
+    <span class="sep">|</span> <a href="https://github.com/MorrisZJ">GitHub</a>
+  </div>
+</header>
+
+<section>
+  <h2>Research</h2>
+  <div>
+    Efficient and scalable LLM and agentic systems &mdash; <em>system&ndash;method co-design</em> &mdash;
+    and rigorous ways to measure whether the efficiency is real.
+  </div>
+</section>
+
+<section>
+  <h2>Education</h2>
+  <div class="row">
+    <div class="what">
+      <div class="title-line">Ph.D. in Computer Science</div>
+      <div class="org">Rice University, Houston, TX</div>
+      <ul class="tight">
+        <li>Advisor: Prof. Hanjie Chen, Chili Lab (08/2025 &ndash; Present)</li>
+        <li>Advisor: Prof. Xia &ldquo;Ben&rdquo; Hu, Data Lab (08/2024 &ndash; 08/2025)</li>
+      </ul>
+    </div>
+    <div class="when">08/2024 &ndash; Present</div>
+  </div>
+  <div class="row">
+    <div class="what">
+      <div class="title-line">B.S. in Computer Science</div>
+      <div class="org">Case Western Reserve University, Cleveland, OH</div>
+      <ul class="tight">
+        <li>Department of Computer and Data Science. Advisors: Prof. Shuai Xu and Prof. Vipin Chaudhary.</li>
+      </ul>
+    </div>
+    <div class="when">05/2024</div>
+  </div>
+</section>
+
+<section>
+  <h2>Research Interests</h2>
+  <ul class="tight" style="margin-top:1pt;">
+    <li><b>Memory-bound LLM inference.</b> KV cache compression, quantization and transform coding for long-context and agentic workloads.</li>
+    <li><b>Conditional computation.</b> Mixture-of-Experts and training-free routing that turn static redundancy in pretrained models into input-dependent sparsity &mdash; and the serving systems that realize it under real memory budgets.</li>
+    <li><b>Efficiency claims, verified.</b> Whether reported efficiency gains survive controlled comparison, distribution shift, and deployment.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Experience</h2>
+  <div class="row">
+    <div class="what">
+      <div class="title-line">Research Intern, AI Research &amp; Development</div>
+      <div class="org">Nokia, Sunnyvale, CA</div>
+      <ul class="tight">
+        <li>Efficiency and system&ndash;method co-design for large-model inference.</li>
+      </ul>
+    </div>
+    <div class="when">05/2026 &ndash; Present</div>
+  </div>
+</section>
+
+<section>
+  <h2>Publications</h2>
+
+  <div class="pub">
+    <div class="tag">EMNLP&rsquo;26</div>
+    <div class="body">
+      <span class="ttl">Rethinking the Evaluation of Efficiency Methods for Multi-Agent Systems</span><span class="honor">Award Nominee</span><br>
+      <span class="authors"><b>Jiamu Zhang*</b>, Lingxi Zhang*, Pengjun Lu*, Qiyue Zhang, Yu-Neng Chuang, Zhengchen Li, Shuai Xu, Vipin Chaudhary, Hanjie Chen.</span><br>
+      <span class="venue">Conference on Empirical Methods in Natural Language Processing (EMNLP), Main Conference</span>, 2026.
+      <span class="links"><a href="https://arxiv.org/abs/2609.05933">[arXiv]</a></span>
+    </div>
+  </div>
+
+  <div class="pub">
+    <div class="tag">CVPR&rsquo;25</div>
+    <div class="body">
+      <span class="ttl">Flexible Group Count Enables Hassle-Free Structured Pruning</span><br>
+      <span class="authors"><b>Jiamu Zhang*</b>, Shaochen Zhong*, Andrew Ye, Zirui Liu, Sebastian Zhao, Kaixiong Zhou, Li Li, Soo-Hyun Choi, Rui Chen, Xia Hu, Shuai Xu, Vipin Chaudhary.</span><br>
+      <span class="venue">IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</span>, 2025.
+      Acceptance rate 22.1%.
+      <span class="links"><a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Zhang_Flexible_Group_Count_Enables_Hassle-Free_Structured_Pruning_CVPR_2025_paper.pdf">[PDF]</a></span>
+    </div>
+  </div>
+
+  <div class="pub">
+    <div class="tag">Preprint</div>
+    <div class="body">
+      <span class="ttl">SPECTRA: Pushing the KV Cache Beyond the 2-Bit Cliff via Spectral Transform Coding</span><br>
+      <span class="authors"><b>Jiamu Zhang</b>, Liang Wu, Kelly Wan, Hanjie Chen, Liangjie Hong.</span><br>
+      <span class="venue">arXiv:2608.07915</span>, 2026.
+      <span class="links"><a href="https://arxiv.org/abs/2608.07915">[arXiv]</a></span>
+    </div>
+  </div>
+
+  <div class="pub">
+    <div class="tag">Preprint</div>
+    <div class="body">
+      <span class="ttl">WiSP: A Working-Set View of Mixture-of-Experts Serving on Extremely Low-Resource Hardware</span><br>
+      <span class="authors"><b>Jiamu Zhang</b>, Liang Wu, Mayank Darbari, Liangjie Hong.</span><br>
+      <span class="venue">arXiv:2606.21868</span>, 2026.
+      <span class="links"><a href="https://arxiv.org/abs/2606.21868">[arXiv]</a></span>
+    </div>
+  </div>
+
+  <div class="pub">
+    <div class="tag">In Review</div>
+    <div class="body">
+      <span class="ttl">Recognizing and Restructuring Latent Experts for Large Language Model Compression</span><br>
+      <span class="authors"><b>Jiamu Zhang</b>, Alessandro Mason, Ning Xie, Aarav Swami, Ashley Chen, Shuai Xu, Vipin Chaudhary, Hanjie Chen.</span><br>
+      <span class="venue">Under review</span>, 2026.
+    </div>
+  </div>
+
+  <div class="pub">
+    <div class="tag">ACL&rsquo;25</div>
+    <div class="body">
+      <span class="ttl">ReasonerRank: Redefining Language Model Evaluation with Ground-Truth-Free Ranking Frameworks</span><br>
+      <span class="authors"><b>Jiamu Zhang</b>, Jiayi Yuan, Andrew Wen, Hoang Anh Duy Le, Yu-Neng Chuang, Soo-Hyun Choi, Rui Chen, Xia Hu.</span><br>
+      <span class="venue">Findings of the Association for Computational Linguistics: ACL 2025</span>, pp. 13623&ndash;13639.
+      <span class="links"><a href="https://aclanthology.org/2025.findings-acl.700.pdf">[PDF]</a></span>
+    </div>
+  </div>
+
+  <div class="pub">
+    <div class="tag">NeurIPS&rsquo;23</div>
+    <div class="body">
+      <span class="ttl">One Less Reason for Filter Pruning: Gaining Free Adversarial Robustness with Structured Grouped Kernel Pruning</span><br>
+      <span class="authors">Shaochen Zhong, <b>Jiamu Zhang*</b>, Zaichuan You*, Sebastian Zhao*, Zachary LeClaire, Zirui Liu, Vipin Chaudhary, Shuai Xu, Xia Hu.</span><br>
+      <span class="venue">Advances in Neural Information Processing Systems (NeurIPS)</span>, 2023.
+      <span class="links"><a href="https://proceedings.neurips.cc/paper_files/paper/2023/file/c3aba4234afd1c8116d879ba183f4835-Paper-Conference.pdf">[PDF]</a></span>
+    </div>
+  </div>
+
+  <div class="pub">
+    <div class="tag">IEEE SPW</div>
+    <div class="body">
+      <span class="ttl">In-Progress: Structured Pruning in the Wild: Benchmarking Practical Robustness Under Real-World Corruptions</span><br>
+      <span class="authors"><b>Jiamu Zhang</b>, Shaochen Zhong, Hoang Anh Duy Le, Xia Hu.</span><br>
+      <span class="venue">IEEE Security and Privacy Workshops (SPW)</span>, 2025.
+    </div>
+  </div>
+
+  <div class="pub">
+    <div class="tag">arXiv</div>
+    <div class="body">
+      <span class="ttl">The Science of Evaluating Foundation Models</span><br>
+      <span class="authors">Jiayi Yuan, <b>Jiamu Zhang</b>, Andrew Wen, Xia Hu.</span><br>
+      <span class="venue">arXiv:2502.09670</span>, 2025.
+      <span class="links"><a href="https://arxiv.org/abs/2502.09670">[arXiv]</a></span>
+    </div>
+  </div>
+
+  <div class="pub">
+    <div class="tag">TMLR&rsquo;25</div>
+    <div class="body">
+      <span class="ttl">Stop Overthinking: A Survey on Efficient Reasoning for Large Language Models</span><span class="honor">589 citations &middot; 787&#9733;</span><br>
+      <span class="authors">Yang Sui, Yu-Neng Chuang, Guanchu Wang, <b>Jiamu Zhang</b>, Tianyi Zhang, Jiayi Yuan, Hongyi Liu, Andrew Wen, Shaochen Zhong, Hanjie Chen, Xia Hu.</span><br>
+      <span class="venue">Transactions on Machine Learning Research (TMLR)</span>, 2025.
+      <span class="links"><a href="https://arxiv.org/abs/2503.16419">[arXiv]</a> <a href="https://github.com/Eclipsess/Awesome-Efficient-Reasoning-LLMs">[Code]</a></span>
+    </div>
+  </div>
+
+  <div class="pub">
+    <div class="tag">ICML&rsquo;24</div>
+    <div class="body">
+      <span class="ttl">GNNs Also Deserve Editing, and They Need It More Than Once</span><br>
+      <span class="authors">Shaochen Zhong*, Hoang Anh Duy Le*, Zirui Liu, Zhimeng Jiang, Andrew Ye, <b>Jiamu Zhang</b>, Jiayi Yuan, Kaixiong Zhou, Zhaozhuo Xu, Jing Ma, Shuai Xu, Vipin Chaudhary, Xia Hu.</span><br>
+      <span class="venue">International Conference on Machine Learning (ICML)</span>, 2024.
+      <span class="links"><a href="https://openreview.net/pdf?id=rIc9adYbH2">[PDF]</a></span>
+    </div>
+  </div>
+
+  <div class="pub">
+    <div class="tag">npj Med</div>
+    <div class="body">
+      <span class="ttl">Context Matching is not Reasoning: Assessing Generalized Evaluation of Generative Language Models in Clinical Settings</span><br>
+      <span class="authors">Andrew Wen, Qiuhao Lu, Yu-Neng Chuang, Guanchu Wang, Jiayi Yuan, <b>Jiamu Zhang</b>, Liwei Wang, Sunyang Fu, Kurt D. Miller, Heling Jia, Steven D. Bedrick, William R. Hersh, Kirk E. Roberts, Xia Hu, Hongfang Liu.</span><br>
+      <span class="venue">npj Digital Medicine</span>, 2025.
+    </div>
+  </div>
+
+  <div class="footnote">* denotes equal contribution. Citation and star counts as of September 2026.</div>
+</section>
+
+<section>
+  <h2>Honors and Awards</h2>
+  <div class="row">
+    <div class="what"><span class="title-line">EMNLP 2026 Award Nomination</span> <span class="sub">&mdash; for &ldquo;Rethinking the Evaluation of Efficiency Methods for Multi-Agent Systems&rdquo;</span></div>
+    <div class="when">2026</div>
+  </div>
+  <div class="row">
+    <div class="what"><span class="title-line">Swanger Graduate Fellowship</span> <span class="sub">&mdash; Case Western Reserve University</span></div>
+    <div class="when">2024</div>
+  </div>
+  <div class="row">
+    <div class="what"><span class="title-line">The Computer and Data Science Research Award</span> <span class="sub">&mdash; Case Western Reserve University</span></div>
+    <div class="when">2024</div>
+  </div>
+  <div class="row">
+    <div class="what"><span class="title-line">Dean&rsquo;s High Honor List &amp; Latin Honors</span> <span class="sub">&mdash; Case Western Reserve University</span></div>
+    <div class="when">2024</div>
+  </div>
+</section>
+
+<section>
+  <h2>Professional Service</h2>
+  <div class="row">
+    <div class="what"><span class="title-line">Conference Reviewer</span> <span class="sub">&mdash; NeurIPS, ICML, ACL</span></div>
+  </div>
+  <div class="row">
+    <div class="what"><span class="title-line">Journal Reviewer</span> <span class="sub">&mdash; IEEE TPAMI, IEEE TCDS, ACM TIST, ACM TCH, Neurocomputing</span></div>
+  </div>
+  <div class="row">
+    <div class="what"><span class="title-line">Languages</span> <span class="sub">&mdash; English, Mandarin Chinese</span></div>
+  </div>
+</section>
+
+<section>
+  <h2>Teaching</h2>
+  <div class="row">
+    <div class="what"><span class="title-line">TA, COMP 584 &mdash; Natural Language Processing</span> <span class="sub">&middot; Rice University</span></div>
+    <div class="when">2026 Spring</div>
+  </div>
+  <div class="row">
+    <div class="what"><span class="title-line">TA, COMP 631 &mdash; Introduction to Information Retrieval</span> <span class="sub">&middot; Rice University</span></div>
+    <div class="when">2025 Spring</div>
+  </div>
+  <div class="row">
+    <div class="what"><span class="title-line">TA, CSDS 302 &mdash; Discrete Mathematics</span> <span class="sub">&middot; Case Western Reserve University</span></div>
+    <div class="when">2022, 2023, 2024</div>
+  </div>
+  <div class="row">
+    <div class="what"><span class="title-line">TA, CSDS 386 &mdash; Quantum Computing, Information, and Devices</span> <span class="sub">&middot; Case Western Reserve University</span></div>
+    <div class="when">2023 Spring</div>
+  </div>
+</section>
+
+</body>
+</html>
