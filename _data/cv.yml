@@ -8,10 +8,10 @@
     - name: Languages
       value: English, Mandarin Chinese
 
-- title: Summary
+- title: Research
   type: list
   contents:
-    - Ph.D. student in Computer Science focusing on efficient and scalable deep learning and agentic systems, with interests in model compression, system-aware efficiency optimization, and evaluation.
+    - "Efficient and scalable LLM and agentic systems — <em>system–method co-design</em> — and rigorous ways to measure whether the efficiency is real."
 
 - title: Education
   type: time_table
@@ -29,35 +29,61 @@
         - Department of Computer and Data Science.
         - 'Advisors: Prof. Shuai Xu and Prof. Vipin Chaudhary.'
 
-- title: Honors and Awards
+- title: Research Interests
+  type: list
+  contents:
+    - "<b>Memory-bound LLM inference.</b> KV cache compression, quantization and transform coding for long-context and agentic workloads."
+    - "<b>Conditional computation.</b> Mixture-of-Experts and training-free routing that turn static redundancy in pretrained models into input-dependent sparsity — and the serving systems that realize it under real memory budgets."
+    - "<b>Efficient and verifiable agentic systems.</b> Cutting redundant computation and communication in LLM agents and multi-agent systems — and rigorously evaluating whether reported efficiency gains are real."
+
+- title: Experience
   type: time_table
   contents:
-    - title: Dean's High Honor List & Latin Honors
-      institution: Case Western Reserve University
-      year: 2024
-    - title: The Computer and Data Science Research Award
-      institution: Case Western Reserve University
-      year: 2024
-    - title: Swanger Graduate Fellowship
-      institution: Case Western Reserve University
-      year: 2024
+    - title: Research Intern, AI Research & Development
+      institution: Nokia, Sunnyvale, CA
+      year: 05/2026 - Present
+      description:
+        - "Efficiency and system–method co-design for large-model inference."
+        - "Led the design and open-source release of AnyJev."
 
-- title: Research Interests
-  type: nested_list
+- title: Open Source
+  type: time_table
   contents:
-    - title: Efficient Models and Inference Systems
-      items:
-        - System-aware model compression (pruning, sparsification, quantization) and algorithm-implementation co-design.
-        - Scalable architectures for efficient inference and serving (e.g., Mixture-of-Experts, conditional routing).
-    - title: Agentic and Reasoning-Centric Systems
-      items:
-        - Efficient reasoning and test-time compute control for LLMs and multi-agent systems.
-        - Evaluation of LLM / agentic systems beyond accuracy.
+    - title: AnyJev — lead author and principal maintainer
+      institution: Nokia Applied Research
+      year: 2026
+      description:
+        - "Turns any LLM into a typed decision model with calibrated probabilities, training-free by default — served through vLLM as a pooling endpoint plus a few kilobytes of closed-form head."
+        - "Cuts option-order sensitivity 0.230 to 0.073 and calibration error 0.240 to 0.095 with zero labels; raises the share auto-decidable at 5% risk from 7.7% to 52.0% with 100-500 labels."
+        - "Passed 500 GitHub stars in its first three days."
+      linkitems:
+        - link: https://github.com/nokia-applied-research/AnyJev
+          linkname: GitHub
+        - link: https://pypi.org/project/anyjev/
+          linkname: PyPI
 
 - title: Selected Publications
   type: list
   contents:
     - "See the <a href='/publications/'>publications</a> page for a full list with short digests."
+
+- title: Honors and Awards
+  type: time_table
+  contents:
+    - title: EMNLP 2026 Award Nomination
+      institution: EMNLP 2026, Main Conference
+      year: 2026
+      description:
+        - 'For "Rethinking the Evaluation of Efficiency Methods for Multi-Agent Systems".'
+    - title: Swanger Graduate Fellowship
+      institution: Case Western Reserve University
+      year: 2024
+    - title: The Computer and Data Science Research Award
+      institution: Case Western Reserve University
+      year: 2024
+    - title: Dean's High Honor List & Latin Honors
+      institution: Case Western Reserve University
+      year: 2024
 
 - title: Professional Service
   type: nested_list
