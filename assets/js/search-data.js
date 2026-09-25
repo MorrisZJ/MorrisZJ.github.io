@@ -39,6 +39,12 @@ ninja.data = [{
           section: "News",},{id: "news-our-emnlp-2026-paper-rethinking-the-evaluation-of-efficiency-methods-for-multi-agent-systems-was-nominated-for-an-emnlp-2026-award",
           title: 'Our EMNLP 2026 paper Rethinking the Evaluation of Efficiency Methods for Multi-Agent Systems...',
           description: "",
+          section: "News",},{id: "news-released-anyjev-with-nokia-applied-research-turn-any-llm-into-a-typed-decision-model-with-calibrated-probabilities-no-fine-tuning-it-passed-500-github-stars-in-its-first-three-days",
+          title: 'Released AnyJev with Nokia Applied Research — turn any LLM into a typed...',
+          description: "",
+          section: "News",},{id: "news-rethinking-the-evaluation-of-efficiency-methods-for-multi-agent-systems-was-selected-for-an-oral-presentation-at-emnlp-2026",
+          title: 'Rethinking the Evaluation of Efficiency Methods for Multi-Agent Systems was selected for an...',
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
