@@ -33,6 +33,8 @@ I’m Jiamu 'Morris' Zhang (张佳慕), third-year Ph.D. student in the Departme
 
 My research centers on efficient, scalable, and reliable machine learning for large language models (LLMs) and agentic systems. I'm especially drawn to *system–method co-design*: pairing algorithmic ideas—model compression, efficient reasoning and test-time compute control, sparsity and Mixture-of-Experts—with the systems that actually run them, from memory- and compute-aware inference to LLM serving on low-resource hardware. My goal is to make foundation models faster and cheaper without giving up quality. I'm equally interested in how we *measure* these systems, developing rigorous and label-efficient ways to evaluate LLM and multi-agent behavior beyond raw accuracy.
 
+Beyond papers, I care about shipping research people can actually run. I lead [AnyJev](https://github.com/nokia-applied-research/AnyJev), an open-source library from Nokia Applied Research that turns any LLM into a typed decision model with calibrated probabilities—no fine-tuning required.
+
 Prior to my Ph.D., I received my B.S. in the Department of Computer and Data Science from Case Western Reserve University (advisor: Shuai Xu and Vipin Chaudhary), where I worked on model compression and adversarial robustness. I was also fortunate to be mentored by Dr. [Xia "Ben" Hu](https://cs.rice.edu/~xh37/index.html).
 
 I'm really passionate about building open, efficient, and reliable AI systems. Feel free to reach out!

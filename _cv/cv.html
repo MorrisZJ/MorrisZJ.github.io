@@ -131,6 +131,7 @@
     margin-top: 4pt;
   }
   .interests li { margin-bottom: 2.4pt; }
+  code { font-family: "SF Mono", Menlo, monospace; font-size: 8.4pt; }
 </style>
 </head>
 <body>
@@ -186,7 +187,7 @@
   <ul class="tight" style="margin-top:1pt;">
     <li><b>Memory-bound LLM inference.</b> KV cache compression, quantization and transform coding for long-context and agentic workloads.</li>
     <li><b>Conditional computation.</b> Mixture-of-Experts and training-free routing that turn static redundancy in pretrained models into input-dependent sparsity &mdash; and the serving systems that realize it under real memory budgets.</li>
-    <li><b>Efficiency claims, verified.</b> Whether reported efficiency gains survive controlled comparison, distribution shift, and deployment.</li>
+    <li><b>Efficient and verifiable agentic systems.</b> Cutting redundant computation and communication in LLM agents and multi-agent systems &mdash; and rigorously evaluating whether reported efficiency gains are real.</li>
   </ul>
 </section>
 
@@ -197,10 +198,25 @@
       <div class="title-line">Research Intern, AI Research &amp; Development</div>
       <div class="org">Nokia, Sunnyvale, CA</div>
       <ul class="tight">
-        <li>Efficiency and system&ndash;method co-design for large-model inference.</li>
+        <li>Efficiency and system&ndash;method co-design for large-model inference; led the design and open-source release of AnyJev (below).</li>
       </ul>
     </div>
     <div class="when">05/2026 &ndash; Present</div>
+  </div>
+</section>
+
+<section>
+  <h2>Open Source</h2>
+  <div class="row">
+    <div class="what">
+      <div class="title-line">AnyJev &mdash; lead author and principal maintainer<span class="honor">506&#9733; &middot; 73 forks in 3 days</span></div>
+      <div class="org">Nokia Applied Research &middot; github.com/nokia-applied-research/AnyJev &middot; <code>pip install anyjev</code></div>
+      <ul class="tight">
+        <li>Turns any LLM into a typed decision model with calibrated probabilities, training-free by default &mdash; served through vLLM as a pooling endpoint plus a few kilobytes of closed-form head.</li>
+        <li>Cuts option-order sensitivity 0.230&rarr;0.073 and calibration error 0.240&rarr;0.095 with zero labels; raises the share auto-decidable at 5% risk from 7.7% to 52.0% with 100&ndash;500 labels.</li>
+      </ul>
+    </div>
+    <div class="when">2026</div>
   </div>
 </section>
 
@@ -278,15 +294,6 @@
   </div>
 
   <div class="pub">
-    <div class="tag">IEEE SPW</div>
-    <div class="body">
-      <span class="ttl">In-Progress: Structured Pruning in the Wild: Benchmarking Practical Robustness Under Real-World Corruptions</span><br>
-      <span class="authors"><b>Jiamu Zhang</b>, Shaochen Zhong, Hoang Anh Duy Le, Xia Hu.</span><br>
-      <span class="venue">IEEE Security and Privacy Workshops (SPW)</span>, 2025.
-    </div>
-  </div>
-
-  <div class="pub">
     <div class="tag">arXiv</div>
     <div class="body">
       <span class="ttl">The Science of Evaluating Foundation Models</span><br>
@@ -325,7 +332,7 @@
     </div>
   </div>
 
-  <div class="footnote">* denotes equal contribution. Citation and star counts as of September 2026.</div>
+  <div class="footnote">* denotes equal contribution. Citation, star and download counts as of September 2026.</div>
 </section>
 
 <section>
