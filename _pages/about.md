@@ -33,10 +33,19 @@ I’m Jiamu 'Morris' Zhang (张佳慕), third-year Ph.D. student in the Departme
 
 My research centers on efficient, scalable, and reliable machine learning for large language models (LLMs) and agentic systems. I'm especially drawn to *system–method co-design*: pairing algorithmic ideas—model compression, efficient reasoning and test-time compute control, sparsity and Mixture-of-Experts—with the systems that actually run them, from memory- and compute-aware inference to LLM serving on low-resource hardware. My goal is to make foundation models faster and cheaper without giving up quality. I'm equally interested in how we *measure* these systems, developing rigorous and label-efficient ways to evaluate LLM and multi-agent behavior beyond raw accuracy.
 
-Beyond papers, I care about shipping research people can actually run. I lead [AnyJev](https://github.com/nokia-applied-research/AnyJev), an open-source library from Nokia Applied Research that turns any LLM into a typed decision model with calibrated probabilities—no fine-tuning required.
-
 Prior to my Ph.D., I received my B.S. in the Department of Computer and Data Science from Case Western Reserve University (advisor: Shuai Xu and Vipin Chaudhary), where I worked on model compression and adversarial robustness. I was also fortunate to be mentored by Dr. [Xia "Ben" Hu](https://cs.rice.edu/~xh37/index.html).
 
 I'm really passionate about building open, efficient, and reliable AI systems. Feel free to reach out!
 
 See my [publications](/publications/) for a full list, or my [Google Scholar](https://scholar.google.com/citations?user=eQpW5EIAAAAJ&hl=en) profile.
+
+### Software
+
+I care about shipping research people can actually run.
+
+**[AnyJev](https://github.com/nokia-applied-research/AnyJev)** — turn any LLM into a typed decision model with calibrated probabilities, no fine-tuning required. I lead the project at Nokia Applied Research; it ships as a [PyPI package](https://pypi.org/project/anyjev/) (`pip install anyjev`) and serves through vLLM.
+
+[![GitHub stars](https://img.shields.io/github/stars/nokia-applied-research/AnyJev?style=flat-square&logo=github&logoColor=white&label=stars&color=24292f)](https://github.com/nokia-applied-research/AnyJev)
+[![GitHub forks](https://img.shields.io/github/forks/nokia-applied-research/AnyJev?style=flat-square&logo=github&logoColor=white&label=forks&color=24292f)](https://github.com/nokia-applied-research/AnyJev/forks)
+[![PyPI](https://img.shields.io/pypi/v/anyjev?style=flat-square&logo=pypi&logoColor=white&label=pypi&color=3775a9)](https://pypi.org/project/anyjev/)
+[![License](https://img.shields.io/github/license/nokia-applied-research/AnyJev?style=flat-square&label=license&color=6c757d)](https://github.com/nokia-applied-research/AnyJev/blob/main/LICENSE)
