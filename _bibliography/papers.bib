@@ -19,6 +19,7 @@
   year={2026},
   selected={true},
   bibtex_show={true},
+  preview={emnlp_mas.png},
   arxiv={2609.05933},
   award={Nominated for an EMNLP 2026 award.},
   award_name={Award Nominee},
@@ -34,6 +35,7 @@
   year={2026},
   selected={true},
   bibtex_show={true},
+  preview={spectra.png},
   arxiv={2608.07915},
   tldr={Efficiency + Quantization + Long Context},
   digest={As LLMs read longer inputs, inference memory is dominated by the KV cache, and the usual fix -- quantizing every stored value to the same low precision -- stalls at a 2-bit cliff, where four levels are too few for the cache's outlier-heavy values. Spending more bits on the channels that matter would help, but the raw cache offers no handle: its channels are strongly correlated, so none stands out. We show the handle appears once the cache is rotated into a coordinate system computed from its own statistics -- there a small fraction of channels carries almost all the information. SPECTRA is a training-free, drop-in codec built on this observation: on Llama-3.1-8B and Qwen2.5-7B long-context benchmarks it is near-lossless at 4x compression, competitive at 8x where uniform quantization has collapsed, and reaches up to 12x.}
@@ -46,6 +48,7 @@
   journal={Preprint (work in progress)},
   year={2026},
   bibtex_show={true},
+  preview={wisp.png},
   arxiv={2606.21868},
   tldr={Efficiency + Systems + MoE},
   digest={Mixture-of-Experts models put most of their parameters in experts, yet only a few fire per token -- and on commodity GPUs the usual layer-level CPU offload streams every expert across PCIe on each forward pass, throwing away MoE's sparsity. WiSP treats low-resource MoE serving as a GPU working-set problem, paging in only the experts a workload actually reuses, and reaches up to 1.95x the decode throughput of static offload at the same memory budget with byte-identical outputs. A companion allocator, MV-WSA, splits VRAM between experts and the KV cache by equalizing marginal latency benefit per byte.}
@@ -70,6 +73,7 @@
   year={2025},
   selected={true},
   bibtex_show={true},
+  preview={cvpr_leanflex.png},
   code={https://github.com/MorrisZJ/LeanFlex-GKP},
   pdf={https://openaccess.thecvf.com/content/CVPR2025/papers/Zhang_Flexible_Group_Count_Enables_Hassle-Free_Structured_Pruning_CVPR_2025_paper.pdf},
   tldr={Efficiency + Pruning},
@@ -84,6 +88,7 @@
   year={2025},
   selected={true},
   bibtex_show={true},
+  preview={tmlr_overthinking.png},
   arxiv={2503.16419},
   code={https://github.com/Eclipsess/Awesome-Efficient-Reasoning-LLMs},
   tldr={Survey + Efficiency + LLM},
@@ -98,6 +103,7 @@
   pages={13623--13639},
   year={2025},
   bibtex_show={true},
+  preview={acl_reasonerrank.png},
   pdf={https://aclanthology.org/2025.findings-acl.700.pdf},
   tldr={Evaluation + LLM},
   digest={Evaluating LLMs usually leans on ground-truth labels that are expensive and often unavailable. We rank models without any ground truth, using a reasoning-consistency framework that yields reliable, label-free rankings well correlated with traditional benchmarks.}
@@ -121,6 +127,7 @@
   journal={arXiv preprint arXiv:2502.09670},
   year={2025},
   bibtex_show={true},
+  preview={science_eval.png},
   arxiv={2502.09670},
   tldr={Evaluation},
   digest={Foundation-model evaluation is fragmented and frequently ad hoc. This work lays out principles and a structured framework for evaluating foundation models rigorously -- what to measure, how, and why -- toward assessments that are trustworthy and comparable.}
@@ -133,6 +140,7 @@
   journal={npj Digital Medicine},
   year={2025},
   bibtex_show={true},
+  preview={npj_context.png},
   tldr={Evaluation + Healthcare},
   digest={Generative LLMs can appear competent in clinical QA by matching surface context rather than genuinely reasoning. Through a generalized clinical evaluation, we show that strong benchmark numbers can mask a real lack of reasoning in medical settings.}
 }
@@ -144,6 +152,7 @@
   booktitle={International Conference on Machine Learning (ICML)},
   year={2024},
   bibtex_show={true},
+  preview={icml_seedgnn.png},
   pdf={https://openreview.net/pdf?id=rIc9adYbH2},
   tldr={Robustness + Graphs},
   digest={Model editing -- fixing mistakes postmortem -- is common everywhere except graphs, which are theoretically unfriendly to edits. We trace the root cause to over-accommodation of editing targets and present the first graph-editing method that lives up to real-life scrutiny of sequential edits.}
@@ -156,6 +165,7 @@
   booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
   year={2023},
   bibtex_show={true},
+  preview={neurips_gkp.png},
   code={https://github.com/MorrisZJ/adv_robust_gkp},
   pdf={https://proceedings.neurips.cc/paper_files/paper/2023/file/c3aba4234afd1c8116d879ba183f4835-Paper-Conference.pdf},
   tldr={Efficiency + Robustness},

@@ -174,3 +174,25 @@ html[data-theme="dark"] .visitor-map img {
   }
 }
 
+
+
+// -----------------------------------------------------------------------------
+// Publications: larger preview thumbnails.
+// The column widths live in _layouts/bib.liquid (col-sm-5 for the preview,
+// col-sm-7 for the entry). Drop both by one step to shrink the images again.
+// -----------------------------------------------------------------------------
+.publications ol.bibliography li {
+  .abbr {
+    // The venue badge carries .w-100, so cap it or it stretches across the
+    // now-much-wider preview column.
+    abbr.badge {
+      max-width: 150px;
+    }
+  }
+
+  .preview {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+  }
+}
