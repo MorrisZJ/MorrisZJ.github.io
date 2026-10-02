@@ -27,6 +27,21 @@
   digest={Many methods claim to make LLM multi-agent systems (MAS) cheaper by pruning agents or communication edges -- but do the gains really come from the method? Reported improvements are often measured under method-specific prompts and starting topologies, and many appear in settings where a single agent or even random pruning already does well. We introduce a controlled, MAS-demanding diagnostic benchmark that evaluates representative efficiency methods under shared model, agent, and runtime settings across topology, scale, depth, and tool use, and find that many reported gains are setup-dependent -- arising from structural collapse, disabled tool pathways, or easy pruning rather than genuine efficiency improvements.}
 }
 
+@article{zhang2026anyjev,
+  abbr={Tech Report},
+  title={AnyJev Technical Report},
+  author={Jiamu Zhang and Tianze Yang and Yucheng Shi and Evan Chen and Zixiang Nie and Kelly Wan and Liangjie Hong and Ninghao Liu and Liang Wu},
+  journal={arXiv preprint arXiv:2610.00831},
+  year={2026},
+  selected={true},
+  bibtex_show={true},
+  preview={anyjev.png},
+  arxiv={2610.00831},
+  code={https://github.com/nokia-applied-research/AnyJev},
+  tldr={Calibration + Decision Models + Efficiency},
+  digest={A typed decision is a choice among a fixed set of options returned as a probability rather than as text, and systems that need one today train a model for the purpose. AnyJev instead reads it from a single prefill of an off-the-shelf instruction-tuned LLM, restricting the next-token distribution at the answer position to the option tokens. That raw readout has two defects -- the model favors certain labels whatever the input, and certain positions in the option list -- and AnyJev corrects both with no gradient steps and no parameter changes, dividing out a label prior estimated from unlabelled inputs and averaging log-probabilities over cyclic rotations of the options. On two 20-option tasks the rotations cut the order-flip rate from 0.33 to 0.14 and from 0.33 to 0.18 while raising accuracy on 11 of 11 models, and a stopping rule chosen on unlabelled data reads 7.3 of 18 rotations to serve 2.2x as many decisions per second on vLLM.}
+}
+
 @article{zhang2026spectra,
   abbr={Preprint},
   title={SPECTRA: Pushing the KV Cache Beyond the 2-Bit Cliff via Spectral Transform Coding},
