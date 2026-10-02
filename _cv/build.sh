@@ -18,9 +18,16 @@ CHROME="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 [ -f "$SRC" ]     || { echo "missing $SRC" >&2; exit 1; }
 [ -x "$CHROME" ]  || { echo "Google Chrome not found at $CHROME" >&2; exit 1; }
 
+# The footnote carries an {{ASOF}} placeholder so the "figures as of" date can
+# never go stale: it is filled in with the current month at build time, and the
+# source keeps the placeholder.
+BUILD_SRC="$(mktemp -t anyjev-cv).html"
+trap 'rm -f "$BUILD_SRC"' EXIT
+sed "s/{{ASOF}}/$(date '+%B %Y')/g" "$SRC" > "$BUILD_SRC"
+
 "$CHROME" --headless --disable-gpu --no-pdf-header-footer \
           --print-to-pdf="$OUT" --virtual-time-budget=4000 \
-          "file://$SRC" 2>/dev/null
+          "file://$BUILD_SRC" 2>/dev/null
 
 python3 - "$OUT" <<'PY'
 import re, sys
