@@ -45,7 +45,7 @@ I care about shipping research people can actually run.
 
 **[AnyJev](https://github.com/nokia-applied-research/AnyJev)** — turn any LLM into a typed decision model with calibrated probabilities, no fine-tuning required. I lead the project at Nokia Applied Research; it ships as a [PyPI package](https://pypi.org/project/anyjev/) (`pip install anyjev`) and serves through vLLM.
 
-[![GitHub stars](https://img.shields.io/github/stars/nokia-applied-research/AnyJev?style=flat-square&logo=github&logoColor=white&label=stars&color=24292f)](https://github.com/nokia-applied-research/AnyJev)
-[![GitHub forks](https://img.shields.io/github/forks/nokia-applied-research/AnyJev?style=flat-square&logo=github&logoColor=white&label=forks&color=24292f)](https://github.com/nokia-applied-research/AnyJev/forks)
-[![PyPI](https://img.shields.io/pypi/v/anyjev?style=flat-square&logo=pypi&logoColor=white&label=pypi&color=3775a9)](https://pypi.org/project/anyjev/)
-[![License](https://img.shields.io/github/license/nokia-applied-research/AnyJev?style=flat-square&label=license&color=6c757d)](https://github.com/nokia-applied-research/AnyJev/blob/main/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/nokia-applied-research/AnyJev?style=flat-square&logo=github&logoColor=white&label=stars&color=24292f&cacheSeconds=3600)](https://github.com/nokia-applied-research/AnyJev)
+[![GitHub forks](https://img.shields.io/github/forks/nokia-applied-research/AnyJev?style=flat-square&logo=github&logoColor=white&label=forks&color=24292f&cacheSeconds=3600)](https://github.com/nokia-applied-research/AnyJev/forks)
+[![PyPI](https://img.shields.io/pypi/v/anyjev?style=flat-square&logo=pypi&logoColor=white&label=pypi&color=3775a9&cacheSeconds=3600)](https://pypi.org/project/anyjev/)
+[![License](https://img.shields.io/github/license/nokia-applied-research/AnyJev?style=flat-square&label=license&color=6c757d&cacheSeconds=3600)](https://github.com/nokia-applied-research/AnyJev/blob/main/LICENSE)
