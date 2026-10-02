@@ -98,6 +98,14 @@
 - title: Teaching
   type: time_table
   contents:
+    - title: "Guest Lecture, COMP 640 - Graduate Seminar in Machine Learning: Large Language Models"
+      institution: Rice University
+      year: 2026 Fall
+      description:
+        - '"A Simple Intro to Test-Time Scaling & Reasoning: Thinking longer, thinking better"'
+      linkitems:
+        - link: https://sites.google.com/rice.edu/mlseminar2026/home
+          linkname: Course page
     - title: TA, COMP 584 - Natural Language Processing
       institution: Rice University
       year: 2026 Spring
