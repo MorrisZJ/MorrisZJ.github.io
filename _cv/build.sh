@@ -4,8 +4,8 @@
 #   ./_cv/build.sh
 #
 # Edits go in _cv/cv.html; this script re-renders it and overwrites
-# assets/pdf/Jiamu_Zhang_CV.pdf. Target length is 2 pages -- if a change pushes
-# it to 3, the usual levers are the `font-size` on `body` and the `@page`
+# assets/pdf/Jiamu_Zhang_CV.pdf. Target length is 3 pages -- if a change pushes
+# it past that, the usual levers are the `font-size` on `body` and the `@page`
 # margins at the top of the stylesheet.
 
 set -euo pipefail
@@ -27,6 +27,6 @@ import re, sys
 d = open(sys.argv[1], 'rb').read()
 pages = len(re.findall(rb'/Type\s*/Page[^s]', d))
 print("wrote %s -- %d page(s), %.0f KB" % (sys.argv[1], pages, len(d) / 1024))
-if pages != 2:
-    print("  note: expected 2 pages", file=sys.stderr)
+if pages != 3:
+    print("  note: expected 3 pages", file=sys.stderr)
 PY
