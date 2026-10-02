@@ -69,6 +69,18 @@
   digest={Mixture-of-Experts models put most of their parameters in experts, yet only a few fire per token -- and on commodity GPUs the usual layer-level CPU offload streams every expert across PCIe on each forward pass, throwing away MoE's sparsity. WiSP treats low-resource MoE serving as a GPU working-set problem, paging in only the experts a workload actually reuses, and reaches up to 1.95x the decode throughput of static offload at the same memory budget with byte-identical outputs. A companion allocator, MV-WSA, splits VRAM between experts and the KV cache by equalizing marginal latency benefit per byte.}
 }
 
+@article{zhang2026bellowskv,
+  abbr={Under Review},
+  title={BellowsKV: One Latent Cache for Many Layers, Expanded on Demand},
+  author={Jiamu Zhang and Hanjie Chen},
+  journal={Under review},
+  year={2026},
+  bibtex_show={true},
+  preview={bellowskv.png},
+  tldr={Efficiency + KV Cache + Compression},
+  digest={Every transformer layer keeps its own KV cache and re-reads it at each generation step, so for long-context serving the cache, not the weights, becomes the bottleneck. Compressing inside a single layer -- quantizing entries, cutting the channel dimension, evicting tokens -- loses substantial accuracy at high ratios, and existing cross-layer sharing degrades sharply too. We find that adjacent layers' KV representations differ considerably while their input hidden states are nearly identical, and that under a fixed budget shrinking a shared latent's dimension costs far more accuracy than quantizing it. BellowsKV is training-free: it maps the hidden states of n adjacent layers to a single full-dimension latent per token, from which each layer reads its own keys and values through a layer-specific projection, then compresses that latent by precision (no dominant outlier channels, so low precision is nearly lossless) or by one eviction decision per block (the layers rank token importance very similarly). Across Llama-3.1-8B, Mistral-7B and Qwen2.5-7B it retains about 99% of full-cache accuracy at 3.6x compression and 97--98% at 13--14x, where the strongest existing cross-layer method retains at most 84% at 16x.}
+}
+
 @article{zhang2026more,
   abbr={Under Review},
   title={Recognizing and Restructuring Latent Experts for Large Language Model Compression},
