@@ -196,3 +196,54 @@ html[data-theme="dark"] .visitor-map img {
     border-radius: 6px;
   }
 }
+
+
+// -----------------------------------------------------------------------------
+// CV download pill, pinned to the top-right of the about page header.
+// Markup lives in _layouts/about.liquid.
+// -----------------------------------------------------------------------------
+.post-header {
+  position: relative;
+}
+
+.cv-corner-link {
+  position: absolute;
+  top: 0.4rem;
+  right: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.3rem 0.8rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 999px;
+  background: var(--global-card-bg-color);
+  color: var(--global-text-color-light);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+
+  &:hover {
+    color: var(--global-theme-color);
+    border-color: var(--global-theme-color);
+    transform: translateY(-1px);
+    text-decoration: none;
+  }
+
+  i {
+    font-size: 0.95rem;
+  }
+}
+
+// On narrow screens the header has no room for an absolute corner, so let the
+// pill sit in the normal flow under the subtitle instead.
+@media (max-width: 576px) {
+  .cv-corner-link {
+    position: static;
+    margin-top: 0.7rem;
+  }
+}
