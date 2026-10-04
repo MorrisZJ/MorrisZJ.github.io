@@ -247,3 +247,75 @@ html[data-theme="dark"] .visitor-map img {
     margin-top: 0.7rem;
   }
 }
+
+
+// -----------------------------------------------------------------------------
+// /code/ page: software entries, thumbnail beside the description.
+// Markup lives in _pages/code.md.
+// -----------------------------------------------------------------------------
+.code-entry {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 1.4rem;
+  align-items: start;
+  margin-bottom: 2.2rem;
+
+  .code-thumb img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    border: 1px solid var(--global-divider-color);
+  }
+
+  h3 {
+    margin: 0 0 0.2rem;
+    font-size: 1.25rem;
+  }
+
+  .code-role {
+    font-size: 0.85rem;
+    color: var(--global-text-color-light);
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    margin-bottom: 0.6rem;
+  }
+
+  // shields badges sit on one line and should not inherit paragraph spacing
+  .code-badges {
+    margin-bottom: 0.6rem;
+    line-height: 1;
+
+    img {
+      margin-right: 0.3rem;
+    }
+  }
+
+  .code-links a {
+    display: inline-block;
+    margin-right: 0.6rem;
+    padding: 0.18rem 0.6rem;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 999px;
+    font-size: 0.82rem;
+    color: var(--global-text-color-light);
+    transition:
+      color 0.2s ease,
+      border-color 0.2s ease;
+
+    &:hover {
+      color: var(--global-theme-color);
+      border-color: var(--global-theme-color);
+      text-decoration: none;
+    }
+  }
+}
+
+// Stack the thumbnail above the text once the two columns stop fitting.
+@media (max-width: 768px) {
+  .code-entry {
+    grid-template-columns: 1fr;
+    gap: 0.9rem;
+  }
+}
