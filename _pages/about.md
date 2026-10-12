@@ -29,21 +29,15 @@ latest_posts:
 
 ### About me
 
-I’m Jiamu 'Morris' Zhang (张佳慕), third-year Ph.D. student in the Department of Computer Science at Rice University, where I am a member of the [Chili Lab](https://hanjiechen.github.io/group.html) advised by Professor [Hanjie Chen](https://hanjiechen.github.io/index.html).
+I'm Jiamu 'Morris' Zhang (张佳慕), a third-year Ph.D. student in Computer Science at Rice University, in the [Chili Lab](https://hanjiechen.github.io/group.html) with Professor [Hanjie Chen](https://hanjiechen.github.io/index.html).
 
-My research centers on efficient, scalable, and reliable machine learning for large language models (LLMs) and agentic systems. I'm especially drawn to *system–method co-design*: pairing algorithmic ideas—model compression, efficient reasoning and test-time compute control, sparsity and Mixture-of-Experts—with the systems that actually run them, from memory- and compute-aware inference to LLM serving on low-resource hardware. My goal is to make foundation models faster and cheaper without giving up quality. I'm equally interested in how we *measure* these systems, developing rigorous and label-efficient ways to evaluate LLM and multi-agent behavior beyond raw accuracy.
+I work on making LLMs and agentic systems cheaper to run, and on measuring whether the savings are real. Most of it is *system–method co-design*: compression, sparsity and test-time compute control, paired with the systems that actually serve them. See my [publications](/publications/) and [code](/code/), or my [Google Scholar](https://scholar.google.com/citations?user=eQpW5EIAAAAJ&hl=en).
 
-Prior to my Ph.D., I received my B.S. in the Department of Computer and Data Science from Case Western Reserve University (advisor: Shuai Xu and Vipin Chaudhary), where I worked on model compression and adversarial robustness. I was also fortunate to be mentored by Dr. [Xia "Ben" Hu](https://cs.rice.edu/~xh37/index.html).
-
-I'm really passionate about building open, efficient, and reliable AI systems. Feel free to reach out!
-
-See my [publications](/publications/) for a full list, or my [Google Scholar](https://scholar.google.com/citations?user=eQpW5EIAAAAJ&hl=en) profile.
+Before Rice I received my B.S. from Case Western Reserve University, advised by Shuai Xu and Vipin Chaudhary, and was fortunate to be mentored by Dr. [Xia "Ben" Hu](https://cs.rice.edu/~xh37/index.html). Feel free to reach out.
 
 ### Software
 
-I care about shipping research people can actually run.
-
-**[AnyJev](https://github.com/nokia-applied-research/AnyJev)** — turn any LLM into a typed decision model with calibrated probabilities, no fine-tuning required. I lead the project at Nokia Applied Research; it ships as a [PyPI package](https://pypi.org/project/anyjev/) (`pip install anyjev`) and serves through vLLM. See [all code](/code/) for the rest.
+**[AnyJev](https://github.com/nokia-applied-research/AnyJev)** turns any LLM into a typed decision model with calibrated probabilities, no fine-tuning required. I lead it at Nokia Applied Research; it installs from [PyPI](https://pypi.org/project/anyjev/) and serves through vLLM. On the community [Jev Decision Index](/code/) it is the highest-placed training-free system, joint 4th of 148 and ahead of the Jev reference itself. [All code →](/code/)
 
 [![GitHub stars](https://img.shields.io/github/stars/nokia-applied-research/AnyJev?style=flat-square&logo=github&logoColor=white&label=stars&color=24292f&cacheSeconds=3600)](https://github.com/nokia-applied-research/AnyJev)
 [![GitHub forks](https://img.shields.io/github/forks/nokia-applied-research/AnyJev?style=flat-square&logo=github&logoColor=white&label=forks&color=24292f&cacheSeconds=3600)](https://github.com/nokia-applied-research/AnyJev/forks)

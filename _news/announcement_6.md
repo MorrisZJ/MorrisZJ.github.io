@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-**AnyJev** placed joint 4th of 148 systems on the community [Jev Decision Index](https://huggingface.co/spaces/multimodalart/jev-decision-index) (v0.3.2) — the only training-free entry anywhere in the top band, and narrowly ahead of the Jev reference it reproduces.
+**AnyJev** is the highest-placed training-free system on the community [Jev Decision Index](https://huggingface.co/spaces/multimodalart/jev-decision-index) (v0.3.2): joint 4th of 148, ahead of the Jev reference itself, with no fine-tuning and no weight changes. [See the board &rarr;](/code/)

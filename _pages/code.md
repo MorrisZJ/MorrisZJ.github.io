@@ -42,7 +42,7 @@ nav_order: 2
   <div class="di-head">
     <div>
       <strong>Jev Decision Index v0.3.2</strong>
-      <span class="di-sub">snapshot of 12 October 2026 &middot; 148 open reproductions of TypeSafe Jev's decision model, ranked by Full score</span>
+      <span class="di-sub">snapshot of 12 October 2026 &middot; 148 open reproductions of TypeSafe Jev's decision model. AnyJev is the highest-placed training-free system on the board.</span>
     </div>
     <div class="di-actions">
       <button type="button" id="di-jump">Jump to AnyJev</button>
