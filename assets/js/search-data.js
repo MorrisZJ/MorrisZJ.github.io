@@ -52,6 +52,9 @@ ninja.data = [{
           section: "News",},{id: "news-rethinking-the-evaluation-of-efficiency-methods-for-multi-agent-systems-was-selected-for-an-oral-presentation-at-emnlp-2026",
           title: 'Rethinking the Evaluation of Efficiency Methods for Multi-Agent Systems was selected for an...',
           description: "",
+          section: "News",},{id: "news-anyjev-placed-joint-4th-of-148-systems-on-the-community-jev-decision-index-v0-3-2-the-only-training-free-entry-anywhere-in-the-top-band-and-narrowly-ahead-of-the-jev-reference-it-reproduces",
+          title: 'AnyJev placed joint 4th of 148 systems on the community Jev Decision Index...',
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
