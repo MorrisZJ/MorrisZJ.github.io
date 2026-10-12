@@ -321,21 +321,135 @@ html[data-theme="dark"] .visitor-map img {
 }
 
 
-// Wide evidence screenshot under a /code/ entry.
-.code-figure {
-  margin: 0 0 2.4rem;
 
-  img {
-    width: 100%;
-    height: auto;
-    border: 1px solid var(--global-divider-color);
-    border-radius: 6px;
+// -----------------------------------------------------------------------------
+// /code/: frozen, scrollable snapshot of the Jev Decision Index ranking.
+// Data is inlined in _pages/code.md, captured from the board at v0.3.2.
+// -----------------------------------------------------------------------------
+.di-snap {
+  margin: 0 0 2.4rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 8px;
+  padding: 0.9rem 1rem 0.7rem;
+  position: relative;
+
+  .di-head {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.6rem;
   }
 
-  figcaption {
-    margin-top: 0.5rem;
-    font-size: 0.82rem;
-    line-height: 1.5;
+  .di-sub {
+    display: block;
+    font-size: 0.78rem;
+    color: var(--global-text-color-light);
+  }
+
+  .di-actions {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    font-size: 0.8rem;
+
+    button,
+    a {
+      border: 1px solid var(--global-divider-color);
+      border-radius: 999px;
+      padding: 0.18rem 0.65rem;
+      background: none;
+      color: var(--global-text-color-light);
+      font-size: 0.8rem;
+      cursor: pointer;
+
+      &:hover {
+        color: var(--global-theme-color);
+        border-color: var(--global-theme-color);
+        text-decoration: none;
+      }
+    }
+  }
+
+  .di-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    font-size: 0.76rem;
+    color: var(--global-text-color-light);
+    margin-bottom: 0.5rem;
+  }
+
+  .di-key i {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    border-radius: 2px;
+    margin-right: 0.3rem;
+  }
+
+  // The chart is far wider than the column; this is the pan surface.
+  .di-scroll {
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    cursor: grab;
+  }
+
+  .di-grid {
+    stroke: var(--global-divider-color);
+    stroke-width: 1;
+  }
+
+  .di-ax,
+  .di-val,
+  .di-lab {
+    fill: var(--global-text-color-light);
+    font-size: 10px;
+  }
+
+  .di-val {
+    font-size: 9.5px;
+  }
+
+  .di-lab {
+    font-size: 9px;
+  }
+
+  // Our own row stays findable in a field of 149 bars.
+  .di-bar.di-mine {
+    stroke: var(--global-theme-color);
+    stroke-width: 2.5;
+  }
+
+  .di-labmine {
+    fill: var(--global-theme-color);
+    font-weight: 700;
+  }
+
+  .di-tip {
+    position: absolute;
+    z-index: 5;
+    pointer-events: none;
+    background: var(--global-card-bg-color);
+    border: 1px solid var(--global-divider-color);
+    border-radius: 6px;
+    padding: 0.4rem 0.6rem;
+    font-size: 0.78rem;
+    line-height: 1.45;
+    max-width: 230px;
+    box-shadow: 0 6px 20px -12px rgba(0, 0, 0, 0.5);
+  }
+
+  .di-base {
+    color: var(--global-text-color-light);
+    font-size: 0.72rem;
+  }
+
+  .di-note {
+    margin: 0.5rem 0 0;
+    font-size: 0.76rem;
     color: var(--global-text-color-light);
   }
 }
