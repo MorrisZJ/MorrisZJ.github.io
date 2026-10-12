@@ -32,9 +32,21 @@ nav_order: 2
       <a href="https://github.com/nokia-applied-research/AnyJev">GitHub</a>
       <a href="https://pypi.org/project/anyjev/">PyPI</a>
       <a href="https://arxiv.org/abs/2610.00831">Technical report (arXiv:2610.00831)</a>
+      <a href="https://huggingface.co/spaces/multimodalart/jev-decision-index">Decision Index</a>
     </div>
   </div>
 </div>
+
+<figure class="code-figure">
+  <img src="{{ '/assets/img/anyjev_decision_index.png' | relative_url }}"
+       alt="Jev Decision Index v0.3.2 ranking chart, with AnyJev in the fourth tied group">
+  <figcaption>
+    Community <a href="https://huggingface.co/spaces/multimodalart/jev-decision-index">Jev Decision Index</a>
+    v0.3.2, 12 October 2026. AnyJev L0 on Gemma-4-31B is the blue bar in the <code>#4 · tied</code> group at
+    60.2, the only <em>inference technique</em> entry in the top band: everything around it is a full
+    fine-tune or a LoRA, and the black bar beside it is the Jev reference the index reproduces.
+  </figcaption>
+</figure>
 
 ## Paper Artifacts
 
