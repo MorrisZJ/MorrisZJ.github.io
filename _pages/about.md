@@ -27,6 +27,13 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
+<!-- Remove this block once the search is over. -->
+<div class="seeking" role="note">
+  <span class="seeking-lead">Seeking a Summer 2027 research internship</span>
+  <span class="seeking-body">&mdash; efficient LLM inference, agentic systems, and evaluation.
+  Graduating December 2027. <a href="mailto:mz81@rice.edu">mz81@rice.edu</a></span>
+</div>
+
 ### About me
 
 I'm Jiamu 'Morris' Zhang (张佳慕), a third-year Ph.D. student in Computer Science at Rice University, in the [Chili Lab](https://hanjiechen.github.io/group.html) with Professor [Hanjie Chen](https://hanjiechen.github.io/index.html).

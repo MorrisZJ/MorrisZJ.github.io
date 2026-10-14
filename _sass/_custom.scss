@@ -453,3 +453,33 @@ html[data-theme="dark"] .visitor-map img {
     color: var(--global-text-color-light);
   }
 }
+
+// -----------------------------------------------------------------------------
+// "Seeking an internship" notice at the top of the about page.
+// Delete this rule and the block in _pages/about.md when the search is over.
+// -----------------------------------------------------------------------------
+.seeking {
+  margin: 0 0 1.6rem;
+  padding: 0.7rem 0.95rem;
+  border-left: 3px solid var(--global-theme-color);
+  border-radius: 0 6px 6px 0;
+  background: color-mix(in srgb, var(--global-theme-color) 7%, transparent);
+  font-size: 0.95rem;
+  line-height: 1.55;
+
+  .seeking-lead {
+    color: var(--global-theme-color);
+    font-weight: 700;
+  }
+
+  .seeking-body {
+    color: var(--global-text-color);
+  }
+
+  // The address is the call to action, so pin it to the accent in both themes
+  // rather than inheriting whatever the surrounding prose link colour is.
+  a {
+    color: var(--global-theme-color);
+    white-space: nowrap;
+  }
+}
