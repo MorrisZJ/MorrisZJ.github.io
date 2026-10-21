@@ -44,7 +44,7 @@ Before Rice I received my B.S. from Case Western Reserve University, advised by 
 
 ### Software
 
-**[AnyJev](https://github.com/nokia-applied-research/AnyJev)** turns any LLM into a typed decision model with calibrated probabilities, no fine-tuning required. I lead it at Nokia Applied Research; it installs from [PyPI](https://pypi.org/project/anyjev/) and serves through vLLM. On the community [Jev Decision Index](/code/) it is the highest-placed training-free system, joint 4th of 148 and ahead of the Jev reference itself. [All code →](/code/)
+**[AnyJev](https://github.com/nokia-applied-research/AnyJev)** turns any LLM into a typed decision model with calibrated probabilities, no fine-tuning required. I lead it at Nokia Applied Research; it installs from [PyPI](https://pypi.org/project/anyjev/) and serves through vLLM. On the community [Jev Decision Index](/code/) (v0.4.1), its fine-tuned variant AnyJev Tacitus is joint 3rd of 219, ahead of the Jev reference. [All code →](/code/)
 
 [![GitHub stars](https://img.shields.io/github/stars/nokia-applied-research/AnyJev?style=flat-square&logo=github&logoColor=white&label=stars&color=24292f&cacheSeconds=3600)](https://github.com/nokia-applied-research/AnyJev)
 [![GitHub forks](https://img.shields.io/github/forks/nokia-applied-research/AnyJev?style=flat-square&logo=github&logoColor=white&label=forks&color=24292f&cacheSeconds=3600)](https://github.com/nokia-applied-research/AnyJev/forks)
