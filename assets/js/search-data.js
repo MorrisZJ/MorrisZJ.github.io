@@ -55,6 +55,9 @@ ninja.data = [{
           section: "News",},{id: "news-anyjev-is-the-highest-placed-training-free-system-on-the-community-jev-decision-index-v0-3-2-joint-4th-of-148-ahead-of-the-jev-reference-itself-with-no-fine-tuning-and-no-weight-changes-see-the-board",
           title: 'AnyJev is the highest-placed training-free system on the community Jev Decision Index (v0.3.2):...',
           description: "",
+          section: "News",},{id: "news-anyjev-tacitus-the-fine-tuned-variant-reached-joint-3rd-of-219-on-the-community-jev-decision-index-v0-4-1-ahead-of-the-jev-reference-see-the-board",
+          title: 'AnyJev Tacitus, the fine-tuned variant, reached joint 3rd of 219 on the community...',
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
