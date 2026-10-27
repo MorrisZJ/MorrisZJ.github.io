@@ -483,3 +483,15 @@ html[data-theme="dark"] .visitor-map img {
     white-space: nowrap;
   }
 }
+
+// Photo attached to a news item: a small thumbnail that zooms to full size on
+// click (medium-zoom, via data-zoomable / data-zoom-src).
+.news img.news-photo {
+  display: block;
+  width: 220px;
+  max-width: 100%;
+  height: auto;
+  margin-top: 0.5rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 4px;
+}
