@@ -31,7 +31,7 @@ latest_posts:
 <div class="seeking" role="note">
   <span class="seeking-lead">Seeking a Summer 2027 research internship</span>
   <span class="seeking-body">&mdash; efficient LLM inference, agentic systems, and evaluation.
-  Graduating December 2027. <a href="mailto:mz81@rice.edu">mz81@rice.edu</a></span>
+  <a href="mailto:mz81@rice.edu">mz81@rice.edu</a></span>
 </div>
 
 ### About me

@@ -27,6 +27,19 @@
   digest={Many methods claim to make LLM multi-agent systems (MAS) cheaper by pruning agents or communication edges -- but do the gains really come from the method? Reported improvements are often measured under method-specific prompts and starting topologies, and many appear in settings where a single agent or even random pruning already does well. We introduce a controlled, MAS-demanding diagnostic benchmark that evaluates representative efficiency methods under shared model, agent, and runtime settings across topology, scale, depth, and tool use, and find that many reported gains are setup-dependent -- arising from structural collapse, disabled tool pathways, or easy pruning rather than genuine efficiency improvements.}
 }
 
+@article{zhang2026bellowskv,
+  abbr={Under Review},
+  title={BellowsKV: One Latent for Many Layers, Expanded on Demand},
+  author={Jiamu Zhang and Hanjie Chen},
+  journal={arXiv preprint arXiv:2610.35023},
+  year={2026},
+  bibtex_show={true},
+  arxiv={2610.35023},
+  preview={bellowskv.png},
+  tldr={Efficiency + KV Cache + Compression},
+  digest={Every transformer layer keeps its own KV cache and re-reads it at each generation step, so for long-context serving the cache, not the weights, becomes the bottleneck. Compressing inside a single layer -- quantizing entries, cutting the channel dimension, evicting tokens -- loses substantial accuracy at high ratios, and existing cross-layer sharing degrades sharply too. We find that adjacent layers' KV representations differ considerably while their input hidden states are nearly identical, and that under a fixed budget shrinking a shared latent's dimension costs far more accuracy than quantizing it. BellowsKV is training-free: it maps the hidden states of n adjacent layers to a single full-dimension latent per token, from which each layer reads its own keys and values through a layer-specific projection, then compresses that latent by precision (no dominant outlier channels, so low precision is nearly lossless) or by one eviction decision per block (the layers rank token importance very similarly). Across Llama-3.1-8B, Mistral-7B and Qwen2.5-7B it retains about 99% of full-cache accuracy at 3.6x compression and 97--98% at 13--14x, where the strongest existing cross-layer method retains at most 84% at 16x.}
+}
+
 @article{zhang2026spectra,
   abbr={Preprint},
   title={SPECTRA: Pushing the KV Cache Beyond the 2-Bit Cliff via Spectral Transform Coding},
@@ -42,6 +55,18 @@
   digest={As LLMs read longer inputs, inference memory is dominated by the KV cache, and the usual fix -- quantizing every stored value to the same low precision -- stalls at a 2-bit cliff, where four levels are too few for the cache's outlier-heavy values. Spending more bits on the channels that matter would help, but the raw cache offers no handle: its channels are strongly correlated, so none stands out. We show the handle appears once the cache is rotated into a coordinate system computed from its own statistics -- there a small fraction of channels carries almost all the information. SPECTRA is a training-free, drop-in codec built on this observation: on Llama-3.1-8B and Qwen2.5-7B long-context benchmarks it is near-lossless at 4x compression, competitive at 8x where uniform quantization has collapsed, and reaches up to 12x.}
 }
 
+@article{zhang2026more,
+  abbr={Under Review},
+  title={Recognizing and Restructuring Latent Experts for Large Language Model Compression},
+  author={Jiamu Zhang and Alessandro Mason and Ning Xie and Aarav Swami and Ashley Chen and Shuai Xu and Vipin Chaudhary and Hanjie Chen},
+  journal={Under review},
+  year={2026},
+  bibtex_show={true},
+  preview={more_experts.png},
+  tldr={Efficiency + Compression + MoE},
+  digest={Static compression like pruning permanently removes parameters deemed globally unimportant -- but in LLMs, importance is highly input- and task-dependent, so static removal is brittle under distribution shift. Inspired by conditional computation in Mixture-of-Experts, MoRE (Mixture-of-Recognized-Experts) is a training-free paradigm that turns static redundancy in pretrained Transformers into input-dependent sparse computation. We find that pretrained MLP layers have a hybrid structure -- a shared backbone that is always active plus input-dependent residual components that enable specialization -- and MoRE exploits it through training-free routing, activating different subsets of pretrained parameters per input without modifying any weights. Across model families and benchmarks, MoRE matches or beats structured pruning on accuracy--efficiency trade-offs while staying robust under distribution shift and knowledge-intensive QA.}
+}
+
 @article{zhang2026wisp,
   abbr={Preprint},
   title={WiSP: A Working-Set View of Mixture-of-Experts Serving on Extremely Low-Resource Hardware},
@@ -54,30 +79,6 @@
   arxiv={2606.21868},
   tldr={Efficiency + Systems + MoE},
   digest={Mixture-of-Experts models put most of their parameters in experts, yet only a few fire per token -- and on commodity GPUs the usual layer-level CPU offload streams every expert across PCIe on each forward pass, throwing away MoE's sparsity. WiSP treats low-resource MoE serving as a GPU working-set problem, paging in only the experts a workload actually reuses, and reaches up to 1.95x the decode throughput of static offload at the same memory budget with byte-identical outputs. A companion allocator, MV-WSA, splits VRAM between experts and the KV cache by equalizing marginal latency benefit per byte.}
-}
-
-@article{zhang2026bellowskv,
-  abbr={Under Review},
-  title={BellowsKV: One Latent Cache for Many Layers, Expanded on Demand},
-  author={Jiamu Zhang and Hanjie Chen},
-  journal={Under review},
-  year={2026},
-  bibtex_show={true},
-  preview={bellowskv.png},
-  tldr={Efficiency + KV Cache + Compression},
-  digest={Every transformer layer keeps its own KV cache and re-reads it at each generation step, so for long-context serving the cache, not the weights, becomes the bottleneck. Compressing inside a single layer -- quantizing entries, cutting the channel dimension, evicting tokens -- loses substantial accuracy at high ratios, and existing cross-layer sharing degrades sharply too. We find that adjacent layers' KV representations differ considerably while their input hidden states are nearly identical, and that under a fixed budget shrinking a shared latent's dimension costs far more accuracy than quantizing it. BellowsKV is training-free: it maps the hidden states of n adjacent layers to a single full-dimension latent per token, from which each layer reads its own keys and values through a layer-specific projection, then compresses that latent by precision (no dominant outlier channels, so low precision is nearly lossless) or by one eviction decision per block (the layers rank token importance very similarly). Across Llama-3.1-8B, Mistral-7B and Qwen2.5-7B it retains about 99% of full-cache accuracy at 3.6x compression and 97--98% at 13--14x, where the strongest existing cross-layer method retains at most 84% at 16x.}
-}
-
-@article{zhang2026more,
-  abbr={Under Review},
-  title={Recognizing and Restructuring Latent Experts for Large Language Model Compression},
-  author={Jiamu Zhang and Alessandro Mason and Ning Xie and Aarav Swami and Ashley Chen and Shuai Xu and Vipin Chaudhary and Hanjie Chen},
-  journal={Under review},
-  year={2026},
-  bibtex_show={true},
-  preview={more_experts.png},
-  tldr={Efficiency + Compression + MoE},
-  digest={Static compression like pruning permanently removes parameters deemed globally unimportant -- but in LLMs, importance is highly input- and task-dependent, so static removal is brittle under distribution shift. Inspired by conditional computation in Mixture-of-Experts, MoRE (Mixture-of-Recognized-Experts) is a training-free paradigm that turns static redundancy in pretrained Transformers into input-dependent sparse computation. We find that pretrained MLP layers have a hybrid structure -- a shared backbone that is always active plus input-dependent residual components that enable specialization -- and MoRE exploits it through training-free routing, activating different subsets of pretrained parameters per input without modifying any weights. Across model families and benchmarks, MoRE matches or beats structured pruning on accuracy--efficiency trade-offs while staying robust under distribution shift and knowledge-intensive QA.}
 }
 
 @inproceedings{zhang2025flexgroup,
