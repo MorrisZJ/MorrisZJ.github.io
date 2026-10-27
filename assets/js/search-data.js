@@ -58,6 +58,9 @@ ninja.data = [{
           section: "News",},{id: "news-anyjev-tacitus-the-fine-tuned-variant-reached-joint-3rd-of-219-on-the-community-jev-decision-index-v0-4-1-ahead-of-the-jev-reference-see-the-board",
           title: 'AnyJev Tacitus, the fine-tuned variant, reached joint 3rd of 219 on the community...',
           description: "",
+          section: "News",},{id: "news-our-emnlp-2026-paper-rethinking-the-evaluation-of-efficiency-methods-for-multi-agent-systems-received-an-outstanding-paper-award",
+          title: 'Our EMNLP 2026 paper Rethinking the Evaluation of Efficiency Methods for Multi-Agent Systems...',
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
