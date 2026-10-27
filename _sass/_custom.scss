@@ -495,3 +495,34 @@ html[data-theme="dark"] .visitor-map img {
   border: 1px solid var(--global-divider-color);
   border-radius: 4px;
 }
+
+// Award-winning publications: a gold trophy badge under the title and a gold
+// frame on the thumbnail. Dark ink on gold keeps contrast in both themes.
+$pub-award-gold: #f2c230;
+$pub-award-ink: #3a2800;
+
+.publications {
+  .pub-award {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin: 0.35rem 0 0.3rem;
+    padding: 0.18rem 0.7rem 0.18rem 0.6rem;
+    border-radius: 4px;
+    background: $pub-award-gold;
+    color: $pub-award-ink;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    line-height: 1.45;
+
+    i {
+      font-size: 0.85rem;
+    }
+  }
+
+  .pub-awarded .preview {
+    box-shadow: 0 0 0 3px $pub-award-gold !important;
+  }
+}
