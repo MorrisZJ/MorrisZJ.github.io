@@ -174,8 +174,6 @@ html[data-theme="dark"] .visitor-map img {
   }
 }
 
-
-
 // -----------------------------------------------------------------------------
 // Publications: larger preview thumbnails.
 // The column widths live in _layouts/bib.liquid (col-sm-5 for the preview,
@@ -196,7 +194,6 @@ html[data-theme="dark"] .visitor-map img {
     border-radius: 6px;
   }
 }
-
 
 // -----------------------------------------------------------------------------
 // CV download pill, pinned to the top-right of the about page header.
@@ -247,7 +244,6 @@ html[data-theme="dark"] .visitor-map img {
     margin-top: 0.7rem;
   }
 }
-
 
 // -----------------------------------------------------------------------------
 // /code/ page: software entries, thumbnail beside the description.
@@ -317,140 +313,6 @@ html[data-theme="dark"] .visitor-map img {
   .code-entry {
     grid-template-columns: 1fr;
     gap: 0.9rem;
-  }
-}
-
-
-
-// -----------------------------------------------------------------------------
-// /code/: frozen, scrollable snapshot of the Jev Decision Index ranking.
-// Data is inlined in _pages/code.md, captured from the board at v0.3.2.
-// -----------------------------------------------------------------------------
-.di-snap {
-  margin: 0 0 2.4rem;
-  border: 1px solid var(--global-divider-color);
-  border-radius: 8px;
-  padding: 0.9rem 1rem 0.7rem;
-  position: relative;
-
-  .di-head {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.6rem;
-    justify-content: space-between;
-    align-items: baseline;
-    margin-bottom: 0.6rem;
-  }
-
-  .di-sub {
-    display: block;
-    font-size: 0.78rem;
-    color: var(--global-text-color-light);
-  }
-
-  .di-actions {
-    display: flex;
-    gap: 0.5rem;
-    align-items: center;
-    font-size: 0.8rem;
-
-    button,
-    a {
-      border: 1px solid var(--global-divider-color);
-      border-radius: 999px;
-      padding: 0.18rem 0.65rem;
-      background: none;
-      color: var(--global-text-color-light);
-      font-size: 0.8rem;
-      cursor: pointer;
-
-      &:hover {
-        color: var(--global-theme-color);
-        border-color: var(--global-theme-color);
-        text-decoration: none;
-      }
-    }
-  }
-
-  .di-legend {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.75rem;
-    font-size: 0.76rem;
-    color: var(--global-text-color-light);
-    margin-bottom: 0.5rem;
-  }
-
-  .di-key i {
-    display: inline-block;
-    width: 9px;
-    height: 9px;
-    border-radius: 2px;
-    margin-right: 0.3rem;
-  }
-
-  // The chart is far wider than the column; this is the pan surface.
-  .di-scroll {
-    overflow-x: auto;
-    overflow-y: hidden;
-    position: relative;
-    cursor: grab;
-  }
-
-  .di-grid {
-    stroke: var(--global-divider-color);
-    stroke-width: 1;
-  }
-
-  .di-ax,
-  .di-val,
-  .di-lab {
-    fill: var(--global-text-color-light);
-    font-size: 10px;
-  }
-
-  .di-val {
-    font-size: 9.5px;
-  }
-
-  .di-lab {
-    font-size: 9px;
-  }
-
-  // Our own row stays findable in a field of 149 bars.
-  .di-bar.di-mine {
-    stroke: var(--global-theme-color);
-    stroke-width: 2.5;
-  }
-
-  .di-labmine {
-    fill: var(--global-theme-color);
-    font-weight: 700;
-  }
-
-  .di-tip {
-    position: absolute;
-    z-index: 5;
-    pointer-events: none;
-    background: var(--global-card-bg-color);
-    border: 1px solid var(--global-divider-color);
-    border-radius: 6px;
-    padding: 0.4rem 0.6rem;
-    font-size: 0.78rem;
-    line-height: 1.45;
-    max-width: 230px;
-    box-shadow: 0 6px 20px -12px rgba(0, 0, 0, 0.5);
-  }
-
-  .di-base {
-    color: var(--global-text-color-light);
-    font-size: 0.72rem;
-  }
-
-  .di-note {
-    margin: 0.5rem 0 0;
-    font-size: 0.76rem;
-    color: var(--global-text-color-light);
   }
 }
 
@@ -524,5 +386,64 @@ $pub-award-ink: #3a2800;
 
   .pub-awarded .preview {
     box-shadow: 0 0 0 3px $pub-award-gold !important;
+  }
+}
+
+// Minimal homepage: one-line intro plus a list of links to each section.
+.home-intro {
+  font-size: 1.05rem;
+  line-height: 1.65;
+  margin: 0 0 1.6rem;
+}
+
+.home-links {
+  // Its own block context, so every row stays the same width beside the photo.
+  display: flow-root;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+  border-top: 1px solid var(--global-divider-color);
+
+  li {
+    border-bottom: 1px solid var(--global-divider-color);
+  }
+
+  a {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    padding: 0.75rem 0.15rem;
+    color: var(--global-text-color);
+    text-decoration: none;
+  }
+
+  .hl-name {
+    min-width: 7.5rem;
+    font-weight: 600;
+    color: var(--global-theme-color);
+  }
+
+  .hl-desc {
+    flex: 1;
+    font-size: 0.95rem;
+    color: var(--global-text-color-light);
+  }
+
+  .hl-arrow {
+    color: var(--global-text-color-light);
+    transition: transform 0.15s ease;
+  }
+
+  a:hover {
+    text-decoration: none;
+
+    .hl-name {
+      text-decoration: underline;
+    }
+
+    .hl-arrow {
+      color: var(--global-theme-color);
+      transform: translateX(3px);
+    }
   }
 }

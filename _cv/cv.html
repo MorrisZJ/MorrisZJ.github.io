@@ -125,6 +125,7 @@
     white-space: nowrap;
   }
   .footnote {
+    break-before: avoid; page-break-before: avoid;
     font-size: 8.4pt;
     color: var(--muted);
     font-style: italic;
@@ -209,14 +210,8 @@
   <h2>Open Source</h2>
   <div class="row">
     <div class="what">
-      <div class="title-line">AnyJev &mdash; lead author and principal maintainer<span class="honor">1,492&#9733; &middot; 171 forks</span></div>
+      <div class="title-line">AnyJev &mdash; lead author and principal maintainer<span class="honor">1,653&#9733;</span></div>
       <div class="org">Nokia Applied Research &middot; github.com/nokia-applied-research/AnyJev &middot; <code>pip install anyjev</code> &middot; technical report arXiv:2610.00831</div>
-      <ul class="tight">
-        <li>Turns any LLM into a typed decision model with calibrated probabilities, training-free by default &mdash; served through vLLM as a pooling endpoint plus a few kilobytes of closed-form head.</li>
-        <li>Cuts option-order sensitivity 0.230&rarr;0.073 and calibration error 0.240&rarr;0.095 with zero labels; raises the share auto-decidable at 5% risk from 7.7% to 52.0% with 100&ndash;500 labels.</li>
-        <li>Passed 1,000 GitHub stars in its first ten days; released under Apache-2.0 with a published PyPI package.</li>
-        <li>Highest-placed training-free system on the community Jev Decision Index (v0.3.2): joint 4th of 148, ahead of the Jev reference itself.</li>
-      </ul>
     </div>
     <div class="when">2026</div>
   </div>
@@ -318,7 +313,7 @@
   <div class="pub">
     <div class="tag">TMLR&rsquo;25</div>
     <div class="body">
-      <span class="ttl">Stop Overthinking: A Survey on Efficient Reasoning for Large Language Models</span><span class="honor">603 citations &middot; 791&#9733;</span><br>
+      <span class="ttl">Stop Overthinking: A Survey on Efficient Reasoning for Large Language Models</span><span class="honor">688 citations &middot; 795&#9733;</span><br>
       <span class="authors">Yang Sui, Yu-Neng Chuang, Guanchu Wang, <b>Jiamu Zhang</b>, Tianyi Zhang, Jiayi Yuan, Hongyi Liu, Andrew Wen, Shaochen Zhong, Hanjie Chen, Xia Hu.</span><br>
       <span class="venue">Transactions on Machine Learning Research (TMLR)</span>, 2025.
       <span class="links"><a href="https://arxiv.org/abs/2503.16419">[arXiv]</a> <a href="https://github.com/Eclipsess/Awesome-Efficient-Reasoning-LLMs">[Code]</a></span>
@@ -344,7 +339,7 @@
     </div>
   </div>
 
-  <div class="footnote">* denotes equal contribution. Citation counts from Google Scholar; star and download counts from GitHub and PyPI. Figures as of {{ASOF}}.</div>
+  <div class="footnote">* denotes equal contribution. Citation counts from Google Scholar; star counts from GitHub. Figures as of {{ASOF}}.</div>
 </section>
 
 <section>
