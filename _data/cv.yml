@@ -11,7 +11,7 @@
 - title: Research
   type: list
   contents:
-    - "Efficient and scalable LLM and agentic systems — <em>system–method co-design</em> — and rigorous ways to measure whether the efficiency is real."
+    - "Building efficient &amp; robust models and agentic systems."
 
 - title: Education
   type: time_table
@@ -34,7 +34,7 @@
   contents:
     - "<b>Memory-bound LLM inference.</b> KV cache compression, quantization and transform coding for long-context and agentic workloads."
     - "<b>Conditional computation.</b> Mixture-of-Experts and training-free routing that turn static redundancy in pretrained models into input-dependent sparsity — and the serving systems that realize it under real memory budgets."
-    - "<b>Efficient and verifiable agentic systems.</b> Cutting redundant computation and communication in LLM agents and multi-agent systems — and rigorously evaluating whether reported efficiency gains are real."
+    - "<b>Efficient and robust agentic systems.</b> Cutting redundant computation and communication in LLM agents and multi-agent systems — and rigorously evaluating whether reported efficiency gains are real."
 
 - title: Experience
   type: time_table

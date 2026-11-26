@@ -29,7 +29,7 @@ latest_posts:
   <span class="seeking-body"><a href="mailto:mz81@rice.edu">mz81@rice.edu</a></span>
 </div>
 
-<p class="home-intro">I work with <a href="https://hanjiechen.github.io/index.html">Hanjie Chen</a> in the <a href="https://hanjiechen.github.io/group.html">Chili Lab</a> on making LLMs and agents cheaper to run, and on checking whether the savings are real.</p>
+<p class="home-intro">I work with <a href="https://hanjiechen.github.io/index.html">Hanjie Chen</a> in the <a href="https://hanjiechen.github.io/group.html">Chili Lab</a> on building efficient &amp; robust models and agentic systems.</p>
 
 <ul class="home-links">
   <li><a href="/publications/"><span class="hl-name">publications</span><span class="hl-desc">EMNLP 2026 Outstanding Paper &middot; CVPR &middot; TMLR</span><span class="hl-arrow" aria-hidden="true">&rarr;</span></a></li>

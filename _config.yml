@@ -9,11 +9,11 @@ last_name: Zhang
 contact_note: >
   Email is the best way to reach me.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Ph.D. student in Computer Science at Rice University, working on efficient and robust machine learning for large language models and multi-agent systems.
+  Ph.D. student in Computer Science at Rice University, building efficient and robust models and agentic systems.
 footer_text: >
   Built with <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> and the <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted on <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: Jiamu Zhang, Morris Zhang, Rice University, machine learning, large language models, LLM, multi-agent systems, efficient ML, robust ML
+keywords: Jiamu Zhang, Morris Zhang, Rice University, machine learning, large language models, LLM, multi-agent systems, agentic systems, efficient ML, robust ML
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 💠 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
