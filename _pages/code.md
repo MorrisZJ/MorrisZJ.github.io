@@ -81,6 +81,8 @@ nav_order: 2
     <div class="code-links">
       <a href="https://github.com/nokia-applied-research/SPECTRA">GitHub</a>
       <a href="https://arxiv.org/abs/2608.07915">Paper (arXiv:2608.07915)</a>
+      <a href="https://huggingface.co/morriszjm/Llama-3.1-8B-Instruct-SPECTRA-Flash">🤗 Llama-3.1-8B Flash</a>
+      <a href="https://huggingface.co/morriszjm/Qwen3.5-9B-SPECTRA-Flash">🤗 Qwen3.5-9B Flash</a>
     </div>
   </div>
 </div>
