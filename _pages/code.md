@@ -32,6 +32,43 @@ nav_order: 2
 ## Paper Artifacts
 
 <div class="code-entry">
+  <a class="code-thumb" href="https://github.com/chili-lab/rethinking-mas-efficiency-eval">
+    <img src="{{ '/assets/img/publication_preview/emnlp_mas.png' | relative_url }}" alt="Rethinking the Evaluation of Efficiency Methods for Multi-Agent Systems">
+  </a>
+  <div class="code-body">
+    <h3><a href="https://github.com/chili-lab/rethinking-mas-efficiency-eval">Rethinking MAS Efficiency Evaluation</a></h3>
+    <div class="code-role">Official implementation &middot; co-first author &middot; EMNLP 2026 Outstanding Paper</div>
+    <p>The multi-agent engine behind our controlled evaluation of efficiency methods for LLM
+    multi-agent systems. Define a MAS as a topology plus a set of agents, give it questions, and
+    get its answers.</p>
+    <div class="code-links">
+      <a href="https://github.com/chili-lab/rethinking-mas-efficiency-eval">GitHub</a>
+      <a href="https://arxiv.org/abs/2609.05933">Paper (arXiv:2609.05933)</a>
+    </div>
+  </div>
+</div>
+
+<div class="code-entry">
+  <a class="code-thumb" href="https://github.com/MorrisZJ/BellowsKV">
+    <img src="{{ '/assets/img/publication_preview/bellowskv.png' | relative_url }}" alt="BellowsKV">
+  </a>
+  <div class="code-body">
+    <h3><a href="https://github.com/MorrisZJ/BellowsKV">BellowsKV</a></h3>
+    <div class="code-role">Official implementation &middot; first author</div>
+    <p>Cross-layer KV-cache compression for Hugging Face Transformers and vLLM. Maps the hidden states of
+    adjacent layers to one shared latent per token; BellowsKV-Flash makes the KV cache 13.4&times;
+    smaller and decodes faster than dense.</p>
+    <div class="code-links">
+      <a href="https://github.com/MorrisZJ/BellowsKV">GitHub</a>
+      <a href="https://arxiv.org/abs/2610.35023">Paper (arXiv:2610.35023)</a>
+      <a href="https://huggingface.co/morriszjm/Llama-3.1-8B-Instruct-BellowsKV-Flash-Lite">🤗 Llama-3.1-8B Flash-Lite</a>
+      <a href="https://huggingface.co/morriszjm/Llama-3.1-8B-Instruct-BellowsKV-Flash-Turbo">🤗 Llama-3.1-8B Flash-Turbo</a>
+      <a href="https://huggingface.co/morriszjm/Qwen3.5-9B-BellowsKV-Flash-Lite">🤗 Qwen3.5-9B Flash-Lite</a>
+    </div>
+  </div>
+</div>
+
+<div class="code-entry">
   <a class="code-thumb" href="https://github.com/nokia-applied-research/SPECTRA">
     <img src="{{ '/assets/img/publication_preview/spectra.png' | relative_url }}" alt="SPECTRA">
   </a>
